@@ -1,11 +1,10 @@
-
 BALLX — Ecossistema Financeiro Esportivo Web5
 
 Visão Geral
 
 A BALLX é um ecossistema financeiro esportivo brasileiro, projetado para integrar blockchain, governança on-chain e sistemas operacionais reais, indo além do conceito tradicional de “apenas uma criptomoeda”.
 
-Este repositório reúne os materiais públicos oficiais do projeto, permitindo que qualquer pessoa — usuários, desenvolvedores, parceiros ou instituições — compreenda o que é a BALLX, como ela funciona e quais princípios orientam o sistema.
+Este repositório reúne os materiais públicos oficiais do projeto, permitindo que usuários, desenvolvedores, parceiros e instituições compreendam o que é a BALLX, como ela funciona e quais princípios orientam o sistema.
 
 
 ---
@@ -16,14 +15,14 @@ A BALLX foi criada para operar como uma infraestrutura financeira utilitária, c
 
 clubes e ligas esportivas
 
-atletas e projetos esportivos
+atletas e profissionais do esporte
 
 patrocinadores e apoiadores
 
-mercado e tecnologia blockchain
+mercado financeiro e tecnologia blockchain
 
 
-O foco da BALLX é uso real, com rastreabilidade, governança e regras claras, evitando modelos especulativos sem lastro operacional.
+O foco da BALLX é uso real, com rastreabilidade, governança e regras claras, evitando modelos puramente especulativos sem lastro operacional.
 
 
 ---
@@ -32,11 +31,11 @@ Conceito Web5 aplicado à BALLX
 
 A BALLX adota princípios de Web5, combinando:
 
-Web2 → sistemas tradicionais, painéis, marketplaces, integrações reais
+Web2 → sistemas tradicionais, painéis, marketplaces e integrações reais
 
-Web3 → contratos inteligentes, blockchain, eventos on-chain, rastreabilidade
+Web3 → contratos inteligentes, blockchain, eventos on-chain e rastreabilidade
 
-Web5 → identidade do sistema, regras aplicadas no contrato, e lógica financeira que não depende de confiança cega em intermediários
+Web5 → identidade do sistema, regras aplicadas em contrato e lógica financeira que não depende de confiança cega em intermediários
 
 
 Na prática:
@@ -61,7 +60,7 @@ Contrato do token BALLX
 
 Lógica de governança
 
-Controle de permissões
+Regras de capacidade e segurança
 
 Eventos categorizados para auditoria
 
@@ -70,11 +69,9 @@ Eventos categorizados para auditoria
 
 Regras de vesting
 
-Restrições operacionais
+Restrições e controle de circulação
 
-Controle de circulação
-
-Fiscalização e registro on-chain
+Fiscalização e registros on-chain
 
 
 🔹 Camada Operacional
@@ -103,7 +100,7 @@ materiais institucionais públicos
 
 documentação conceitual
 
-análise de coerência e conformidade do sistema
+análises de coerência e conformidade
 
 referências a contratos públicos já implantados
 
@@ -115,34 +112,111 @@ evidências de funcionamento real do ecossistema
 
 Sobre código e contratos não públicos
 
-Algumas camadas do sistema BALLX, como contratos de governança avançada e reserva operacional, não são publicadas neste repositório.
+Algumas camadas do sistema BALLX, como contratos de governança avançados e reservas operacionais, não são publicadas neste repositório.
 
-Isso ocorre por razões estratégicas de proteção da lógica econômica e financeira, comuns em sistemas financeiros que operam em produção.
+Isso ocorre por razões estratégicas de proteção da lógica econômica e financeira, prática comum em sistemas financeiros que operam em produção.
 
-A existência, o papel e a integração dessas camadas são documentados conceitualmente e podem ser avaliados em contexto de auditoria formal, sem exposição pública irrestrita.
+A existência, o papel e a integração dessas camadas são documentados conceitualmente e podem ser avaliados em processos formais de auditoria, sem exposição pública irrestrita.
 
 
 ---
 
 Transparência e Funcionamento Real
 
-A BALLX prioriza:
+A BALLX opera com base em:
 
-rastreabilidade
+rastreabilidade por eventos on-chain
 
-transparência por eventos on-chain
+transparência estrutural
 
 separação clara entre código crítico e sistemas auxiliares
 
-uso real antes de exposição total
+uso real antes da exposição total
 
 
-O projeto já opera com registros reais de transações, pedidos e integrações, demonstrando que a BALLX não é um conceito teórico, mas um sistema funcional.
+O projeto já registra transações, pedidos e integrações reais, demonstrando que a BALLX não é um conceito teórico, mas um sistema funcional.
 
 
 ---
 
-Considerações Finais
+Feed de Dados da Bolsa BALLX — Motor de Dados de Mercado
+
+Este diretório contém o motor oficial de feed de mercado da BALLX, responsável por disponibilizar dados públicos de preço, volume e histórico de negociações de forma auditável, transparente e sem custódia.
+
+O sistema foi projetado para atender padrões utilizados por:
+
+exchanges centralizadas (CEX)
+
+agregadores de mercado (CoinGecko, CoinMarketCap, etc.)
+
+ferramentas de análise e gráficos
+
+
+🔍 Visão Geral
+
+O feed da BALLX segue um modelo híbrido entre blockchain e mercado financeiro tradicional:
+
+❌ não existe trade manual ou edição de dados
+
+❌ não há custódia de moedas ou dinheiro
+
+❌ não é possível gerar negociações falsas
+
+✅ todos os dados são derivados de eventos on-chain
+
+✅ apenas a Autoridade BALLX (V3) pode registrar operações válidas
+
+
+O smart contract apenas emite eventos.
+A Autoridade BALLX valida, consolida e registra os dados no feed público.
+
+🔐 Segurança e Confiabilidade
+
+a blockchain Polygon permite leitura pública dos eventos
+
+a escrita de dados de mercado é restrita à Autoridade BALLX
+
+nenhuma carteira externa pode forjar ou simular trades
+
+o feed reflete exclusivamente operações reais do ecossistema
+
+
+Esse modelo impede wash trading, spoofing e manipulação artificial de volume.
+
+📊 Estrutura de Dados (Resumo)
+
+O endpoint público retorna dados em formato JSON contendo:
+
+par de negociação (ex: BALLX/BRL)
+
+preço atual e preço bruto
+
+histórico temporal (candles)
+
+volume real transacionado
+
+identificação da última ordem válida
+
+
+Campos principais:
+
+symbol
+
+last_price
+
+price_raw
+
+candles[]
+
+last_order
+
+
+O formato é compatível com padrões utilizados por agregadores de mercado.
+
+
+---
+
+Considerações Financeiras
 
 A BALLX foi concebida para ser:
 
@@ -153,12 +227,10 @@ funcional antes de ser expansiva
 governada antes de ser escalada
 
 
-Este repositório é o ponto público de entrada para compreender o ecossistema BALLX e sua proposta dentro de uma visão moderna de Web5 aplicada ao esporte e às finanças.
+Este repositório é o ponto público de entrada para compreender o ecossistema BALLX e sua aplicação prática de uma Web5 voltada ao esporte e às finanças reais.
 
 
 ---
 
-📌 Observação
+BALLX — Onde blockchain encontra mercado real.
 
-Este repositório apresenta apenas informações públicas e institucionais.
-Detalhes técnicos sensíveis são preservados para manter a segurança, a integridade econômica e a sustentabilidade do sistema.
