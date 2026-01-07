@@ -4,7 +4,7 @@ Visão Geral
 
 A BALLX é um ecossistema financeiro esportivo brasileiro, projetado para integrar blockchain, governança on-chain e sistemas operacionais reais, indo além do conceito tradicional de “apenas uma criptomoeda”.
 
-Este repositório reúne os materiais públicos oficiais do projeto, permitindo que usuários, desenvolvedores, parceiros e instituições compreendam o que é a BALLX, como ela funciona e quais princípios orientam o sistema.
+Este repositório reúne os materiais públicos oficiais do projeto, permitindo que usuários, desenvolvedores, parceiros e instituições compreendam o que é a BALLX, como ela funciona e quais princípios técnicos e econômicos orientam o sistema.
 
 
 ---
@@ -104,6 +104,8 @@ análises de coerência e conformidade
 
 referências a contratos públicos já implantados
 
+componentes operacionais públicos, incluindo plugins e engines de leitura de mercado
+
 evidências de funcionamento real do ecossistema
 
 
@@ -114,7 +116,7 @@ Sobre código e contratos não públicos
 
 Algumas camadas do sistema BALLX, como contratos de governança avançados e reservas operacionais, não são publicadas neste repositório.
 
-Isso ocorre por razões estratégicas de proteção da lógica econômica e financeira, prática comum em sistemas financeiros que operam em produção.
+Isso ocorre por razões estratégicas de proteção da lógica econômica e financeira — prática comum em sistemas financeiros que operam em produção.
 
 A existência, o papel e a integração dessas camadas são documentados conceitualmente e podem ser avaliados em processos formais de auditoria, sem exposição pública irrestrita.
 
@@ -139,9 +141,20 @@ O projeto já registra transações, pedidos e integrações reais, demonstrando
 
 ---
 
-Feed de Dados da Bolsa BALLX — Motor de Dados de Mercado
+Plugin de Mercado BALLX — Engine Público de Dados e Gráficos
 
-Este diretório contém o motor oficial de feed de mercado da BALLX, responsável por disponibilizar dados públicos de preço, volume e histórico de negociações de forma auditável, transparente e sem custódia.
+Este diretório contém o plugin público completo de mercado da BALLX, incluindo:
+
+endpoint de dados de mercado
+
+estrutura oficial de feed em JSON
+
+motor gráfico de visualização
+
+arquivos auxiliares de integração
+
+
+O plugin é responsável por disponibilizar dados públicos de preço, volume e histórico de negociações, de forma auditável, transparente e sem custódia.
 
 O sistema foi projetado para atender padrões utilizados por:
 
@@ -152,9 +165,9 @@ agregadores de mercado (CoinGecko, CoinMarketCap, etc.)
 ferramentas de análise e gráficos
 
 
-🔍 Visão Geral
+🔍 Visão Geral do Plugin
 
-O feed da BALLX segue um modelo híbrido entre blockchain e mercado financeiro tradicional:
+O plugin da BALLX segue um modelo híbrido entre blockchain e mercado financeiro tradicional:
 
 ❌ não existe trade manual ou edição de dados
 
@@ -167,8 +180,8 @@ O feed da BALLX segue um modelo híbrido entre blockchain e mercado financeiro t
 ✅ apenas a Autoridade BALLX (V3) pode registrar operações válidas
 
 
-O smart contract apenas emite eventos.
-A Autoridade BALLX valida, consolida e registra os dados no feed público.
+Os smart contracts apenas emitem eventos.
+A Autoridade BALLX valida, consolida e registra os dados que alimentam o plugin público.
 
 🔐 Segurança e Confiabilidade
 
@@ -178,14 +191,14 @@ a escrita de dados de mercado é restrita à Autoridade BALLX
 
 nenhuma carteira externa pode forjar ou simular trades
 
-o feed reflete exclusivamente operações reais do ecossistema
+o plugin reflete exclusivamente operações reais do ecossistema
 
 
 Esse modelo impede wash trading, spoofing e manipulação artificial de volume.
 
-📊 Estrutura de Dados (Resumo)
+📊 Estrutura de Dados
 
-O endpoint público retorna dados em formato JSON contendo:
+O plugin consome e expõe dados em formato JSON, incluindo:
 
 par de negociação (ex: BALLX/BRL)
 
@@ -212,6 +225,11 @@ last_order
 
 
 O formato é compatível com padrões utilizados por agregadores de mercado.
+
+📦 Distribuição
+
+O plugin é disponibilizado neste repositório em formato aberto para leitura e auditoria.
+Para facilitar a instalação e reutilização, os arquivos operacionais podem ser baixados diretamente como pacote (ZIP).
 
 
 ---
