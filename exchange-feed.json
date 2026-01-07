@@ -1,0 +1,194 @@
+/* ===============================
+   BALLX GRAPH ENGINE (RICH FRONTEND)
+   BASELINE SCALE PRESERVED
+   =============================== */
+
+(() => {
+    try {
+
+        // ===============================
+        // CONFIG
+        // ===============================
+        const FEED = window.BALLX_API?.endpoint || null;
+        const GOLD = "#FFD700";
+        const BG   = "#0b1324";
+        const PRICE_SCALE = 10; // 🔒 BASELINE DEFINITIVO (NÃO MEXER)
+
+        if (!FEED) {
+            console.error("BALLX: endpoint REST não definido");
+            return;
+        }
+
+        let LAST_ORDER = null;
+        let LAST_CANDLE = null;
+
+        // ===============================
+        // MAIN
+        // ===============================
+        async function renderBallxChart(containerId = "ballx-chart") {
+
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            if (typeof LightweightCharts === "undefined") return;
+
+            const chart = LightweightCharts.createChart(container, {
+                width: container.clientWidth || 600,
+                height: 300,
+                layout: {
+                    background: { color: BG },
+                    textColor: GOLD,
+                    fontSize: 12,
+                },
+                grid: {
+                    vertLines: { color: "rgba(255,215,0,0.15)" },
+                    horzLines: { color: "rgba(255,215,0,0.15)" }
+                },
+                rightPriceScale: {
+                    borderColor: "rgba(255,215,0,0.4)"
+                },
+                timeScale: {
+                    borderColor: "rgba(255,215,0,0.4)",
+                    timeVisible: true,
+                    secondsVisible: false
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Normal
+                }
+            });
+
+            // ===============================
+            // SERIES
+            // ===============================
+            const series = chart.addSeries(
+                LightweightCharts.AreaSeries,
+                {
+                    lineColor: GOLD,
+                    lineWidth: 2,
+                    topColor: "rgba(255,215,0,0.35)",
+                    bottomColor: "rgba(255,215,0,0.05)",
+                    priceFormat: {
+                        type: "price",
+                        precision: 2,
+                        minMove: 0.01
+                    }
+                }
+            );
+
+            // ===============================
+            // TOOLTIP
+            // ===============================
+            const tooltip = document.createElement("div");
+            tooltip.style.cssText = `
+                position:absolute;
+                display:none;
+                padding:10px 14px;
+                background:#000;
+                border:1px solid ${GOLD};
+                color:${GOLD};
+                border-radius:8px;
+                font-size:12px;
+                pointer-events:none;
+                z-index:99999;
+                min-width:180px;
+            `;
+            container.appendChild(tooltip);
+
+            // ===============================
+            // FETCH DATA
+            // ===============================
+            try {
+                const res = await fetch(FEED, {
+                    headers: { "Accept": "application/json" },
+                    cache: "no-store"
+                });
+
+                const json = await res.json();
+                if (!Array.isArray(json.candles)) return;
+
+                LAST_ORDER = json.last_order || null;
+
+                const candles = json.candles
+                    .filter(c => c.time && c.price)
+                    .map(c => {
+                        const scaledPrice = Number(c.price) / PRICE_SCALE;
+
+                        return {
+                            time: Number(c.time),
+                            value: scaledPrice,
+                            raw: c // guarda candle inteiro p/ tooltip
+                        };
+                    });
+
+                if (!candles.length) return;
+
+                LAST_CANDLE = candles[candles.length - 1];
+                series.setData(candles);
+
+            } catch (e) {
+                console.error("BALLX: erro ao carregar feed", e);
+                return;
+            }
+
+            // ===============================
+            // INTERACTIONS (TOOLTIP RICO)
+            // ===============================
+            chart.subscribeCrosshairMove(param => {
+                if (!param?.time || !param?.point) {
+                    tooltip.style.display = "none";
+                    return;
+                }
+
+                const pointData = param.seriesData?.get(series);
+                if (!pointData) return;
+
+                const price = pointData.value;
+                const candle = pointData.raw || {};
+
+                const dateStr = new Date(param.time * 1000).toLocaleString("pt-BR");
+
+                let html = `
+                    <strong>R$ ${price.toFixed(2)}</strong><br>
+                    ${dateStr}
+                `;
+
+                if (candle.volume) {
+                    html += `<br><strong>Vol:</strong> ${Number(candle.volume).toLocaleString("pt-BR")}`;
+                }
+
+                if (candle.open && candle.high && candle.low) {
+                    html += `
+                        <br><strong>O:</strong> ${(candle.open / PRICE_SCALE).toFixed(2)}
+                        <strong>H:</strong> ${(candle.high / PRICE_SCALE).toFixed(2)}
+                        <strong>L:</strong> ${(candle.low / PRICE_SCALE).toFixed(2)}
+                        <strong>C:</strong> ${(candle.close / PRICE_SCALE).toFixed(2)}
+                    `;
+                }
+
+                if (LAST_ORDER) {
+                    html += `
+                        <hr style="border-color:${GOLD};opacity:.3">
+                        <strong>Última ordem</strong><br>
+                        ${LAST_ORDER.order_id || ""}<br>
+                        R$ ${(Number(LAST_ORDER.price) / PRICE_SCALE).toFixed(2)}
+                    `;
+                }
+
+                tooltip.innerHTML = html;
+                tooltip.style.left = param.point.x + 15 + "px";
+                tooltip.style.top  = param.point.y + 15 + "px";
+                tooltip.style.display = "block";
+            });
+
+            window.addEventListener("resize", () => {
+                chart.applyOptions({ width: container.clientWidth });
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderBallxChart();
+        });
+
+    } catch (fatal) {
+        console.error("BALLX: erro fatal", fatal);
+    }
+})();
