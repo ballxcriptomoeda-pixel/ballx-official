@@ -1,330 +1,222 @@
+
 Ecossistema BALLX – Inovação, Ética e Paixão pelo Esporte
 
 
 
+CLÁUSULA 1 — DAS CARTEIRAS INSTITUCIONAIS BALLX
 
-CLÁUSULA 1 — CARTEIRAS COM ACESSO RESTRITO
+1.1 A BALLX opera exclusivamente por meio de carteiras institucionais digitais, disponibilizadas pela própria plataforma BALLX a clubes, ligas, federações, vendedores, lojistas e parceiros comerciais devidamente cadastrados.
 
-1.1 Toda carteira vinculada a clubes, federações, ligas ou com premiações recebidas pela plataforma oficial será considerada “restrita” e só poderá operar via a plataforma oficial BALLX.
+1.2 As carteiras institucionais BALLX não configuram doação, mas sim instrumentos operacionais de crédito, premiação, cashback, comissão ou incentivo econômico, vinculados diretamente às atividades realizadas dentro do ecossistema BALLX.
 
-1.2 Essas carteiras terão rastreamento de transações com obrigatoriedade de justificativa por ícones predefinidos de categoria.
+1.3 Todas as carteiras institucionais serão classificadas como carteiras restritas, operando prioritariamente dentro da plataforma oficial BALLX, com rastreabilidade integral, categorização obrigatória das transações e fiscalização automática pela IA ORIAH.
 
+1.4 A BALLX permanece como detentora da infraestrutura, da lógica de operação e das regras de uso dessas carteiras, podendo aplicar limites, bloqueios, auditorias ou ajustes sempre que necessário para preservar a integridade do ecossistema.
 
 
 
-CLÁUSULA 2 — VENDAS LIMITADAS POR VESTING INTELIGENTE
+CLÁUSULA 2 — DA EXTINÇÃO DO MODELO DE DOAÇÃO DIRETA
 
-2.1 Clubes, federações, entidades, atletas e investidores com tokens recebidos deverão seguir a regra de venda de até 10% (dez por cento) ao ano, liberados em 12 (doze) parcelas mensais de aproximadamente 0,83%, exclusivamente para movimentações destinadas ao mercado externo ao ecossistema BALLX.
+2.1 Fica expressamente estabelecido que não existe, a partir da vigência deste contrato, qualquer modalidade de doação direta de tokens BALLX a clubes, ligas, federações, vendedores, parceiros ou quaisquer terceiros.
 
-2.2 As movimentações internas realizadas dentro do ecossistema BALLX, incluindo pagamentos, premiações, transferências entre clubes, federações, ligas ou fornecedores cadastrados, não estão sujeitas às regras de vesting e podem ser efetuadas de forma imediata e integral na plataforma oficial BALLX.
+2.2 Todo ingresso de tokens BALLX no ecossistema ocorrerá exclusivamente por meio de: a) Carteiras institucionais BALLX;
+b) Operações de cashback;
+c) Premiações por desempenho, metas ou campanhas;
+d) Comissões operacionais;
+e) Créditos econômicos vinculados a atividades reais dentro da plataforma.
 
-2.3 As premiações seguem as regras de liberação imediata previstas na Cláusula 4.4, e as doações iniciais seguem as regras específicas previstas na Cláusula 4.5, devendo respeitar as condições de vesting apenas para movimentações externas.
+2.3 Qualquer referência anterior a “doação”, “doação inicial” ou “doação automática” passa a ser automaticamente interpretada, para todos os efeitos jurídicos, como crédito operacional em carteira institucional BALLX, sem transferência de propriedade irrestrita.
 
+2.4 A inexistência de doação direta visa garantir: a) Sustentabilidade econômica do projeto;
+b) Segurança jurídica;
+c) Conformidade regulatória;
+d) Prevenção a interpretações fiscais indevidas;
+e) Preservação do valor da moeda BALLX.
 
 
 
-CLÁUSULA 3 — USO OBRIGATÓRIO DA PLATAFORMA
+CLÁUSULA 3 — DA ESTRUTURA ECONÔMICA E DO PAPEL DA BALLX GLOBAL
 
-3.1 Qualquer movimentação feita fora da plataforma oficial por carteiras restritas (clubes/federações) será rastreada e punida com bloqueio temporário, reversão de tokens ou suspensão de novos benefícios.
+3.1 A BALLX GLOBAL é reconhecida como a entidade econômica central do ecossistema BALLX, responsável pela operação, tecnologia, contratos, plataformas, parcerias comerciais, carteiras institucionais e crescimento sustentável do projeto.
 
+3.2 Toda a receita gerada no ecossistema BALLX, incluindo taxas, comissões e operações comerciais, será distribuída da seguinte forma: a) 20% (vinte por cento) destinados à ONG BALLX, exclusivamente para fins sociais e institucionais;
+b) 80% (oitenta por cento) destinados à BALLX GLOBAL, como receita operacional, tecnológica e estratégica.
 
+3.3 A ONG BALLX não possui poder de governança econômica, controle operacional, gestão de carteiras ou ingerência sobre tokens, atuando exclusivamente como beneficiária social do ecossistema, conforme percentuais aqui definidos.
 
+3.4 A BALLX GLOBAL detém autoridade plena para definir políticas operacionais, econômicas e tecnológicas, sempre respeitando os princípios éticos, a rastreabilidade e a fiscalização contínua exercida pela IA ORIAH.
 
 
-CLÁUSULA 4 — FAIXAS DE VESTING, PREMIAÇÃO, DOAÇÕES E CAMPANHAS
 
-4.1 Premiações de até 10.000 (dez mil) BALLX — Liberação total imediata para uso interno no ecossistema BALLX ou para movimentação externa.
 
-4.2 Premiações entre 10.001 (dez mil e um) e 99.999 (noventa e nove mil novecentos e noventa e nove) BALLX — Limite de 10.000 (dez mil) por mês para movimentações externas ao ecossistema BALLX, podendo utilizar imediatamente todo o valor para transações internas na plataforma oficial.
+CLÁUSULA 4 — DA FINALIDADE DAS CARTEIRAS E DA ACEITAÇÃO VOLUNTÁRIA DA BALLX
 
-4.3 Carteiras com 100.000 (cem mil) BALLX ou mais — Regra dos 10% (dez por cento) ao ano para movimentações externas, divididos por 12 (doze) parcelas mensais. O saldo poderá ser utilizado integralmente e a qualquer momento para operações internas no ecossistema BALLX.
+4.1 As carteiras institucionais BALLX disponibilizadas a clubes, ligas, vendedores e lojistas têm como finalidade principal a utilização da BALLX como instrumento de cashback, vinculado exclusivamente à venda de produtos, serviços, ingressos ou experiências oferecidas por seus próprios titulares.
 
-4.4 Premiações — Liberação Imediata
+4.2 A aceitação da BALLX como forma de cashback, premiação, ingresso, pagamento parcial ou integral é facultativa, sendo de livre decisão de cada clube, liga, vendedor ou lojista: a) Aceitar ou não a BALLX como retorno ao consumidor;
+b) Definir em quais produtos, serviços ou campanhas a BALLX será utilizada;
+c) Decidir se utilizará a BALLX para premiações, entradas de eventos, ingressos ou outras finalidades internas.
 
-a) Todo valor recebido como premiação por clubes, federações, ligas ou atletas será liberado de forma imediata e integral para uso interno no ecossistema BALLX, sem restrições de percentual.
+4.3 A BALLX não impõe obrigação de aceitação, nem caracteriza relação de pagamento compulsório, tratando-se de um ativo digital de uso opcional, aceito somente quando houver concordância expressa do participante.
 
-b) Os valores de premiação poderão ser utilizados para pagamento de atletas, transferências entre clubes, compra e venda de jogadores, despesas operacionais, campanhas e qualquer outra finalidade interna permitida na plataforma oficial BALLX.
+4.4 Sempre que a BALLX for aceita, os tokens recebidos poderão ser utilizados livremente dentro do ecossistema BALLX, respeitadas as regras de governança e vesting estabelecidas neste contrato.
 
-c) Apenas quando houver intenção de vender premiações no mercado externo, deverão ser aplicadas as regras de vesting previstas nesta cláusula.
 
-4.5 Doações Iniciais — Regra de Vesting e Uso Interno
 
-a) Qualquer valor recebido como doação inicial por clubes, federações ou ligas terá uso livre para todas as operações internas no ecossistema BALLX, incluindo pagamento de atletas, transferências entre clubes, compra e venda de jogadores, despesas operacionais e demais finalidades permitidas na plataforma oficial BALLX.
 
-b) Para movimentações externas ao ecossistema BALLX, aplica-se a seguinte regra de vesting: até 30% (trinta por cento) do valor recebido poderá ser utilizado imediatamente como liquidez para campanhas, ações promocionais ou despesas externas; o saldo restante (70%) deverá seguir a liberação anual máxima de 10% (dez por cento) ao ano, diluído em 12 (doze) parcelas mensais, conforme previsto na Cláusula 2.
+CLÁUSULA 5 — DO VESTING APLICÁVEL A TODO O ECOSSISTEMA
 
-4.6 Campanhas de Inscrição e Valorização da Moeda
+5.1 As regras de vesting inteligente constituem princípio fundamental da governança BALLX e aplicam-se a todo o ecossistema, sem exceção, incluindo: a) Clubes;
+b) Ligas;
+c) Vendedores e lojistas;
+d) Parceiros institucionais;
+e) A própria carteira criadora e as carteiras sob controle da BALLX.
 
-a) Ligas, federações e entidades poderão realizar campanhas de inscrição ou arrecadação utilizando BALLX como forma de pagamento, definindo livremente o valor de venda acima da cotação de mercado, desde que respeitadas as regras do contrato de governança.
-b) Nessas campanhas, a quantidade de BALLX e o valor unitário poderão ser ajustados de modo a gerar receita para cobrir despesas externas, ao mesmo tempo em que contribuem para a valorização da moeda no mercado.
+5.2 O vesting limita as movimentações destinadas ao mercado externo ao ecossistema BALLX ao percentual máximo de 10% (dez por cento) ao ano, liberados de forma proporcional em 12 (doze) parcelas mensais.
 
-c) As vendas de BALLX nessas campanhas deverão ser registradas integralmente na plataforma oficial BALLX, garantindo rastreabilidade e transparência.
+5.3 O uso interno dos tokens dentro do ecossistema BALLX não sofre qualquer limitação, podendo ocorrer de forma imediata e integral.
 
+5.4 O vesting tem como objetivo: a) Proteger o valor da BALLX;
+b) Evitar concentração e despejo de tokens;
+c) Garantir crescimento orgânico e sustentável do ecossistema.
 
 
 
 
 
-CLÁUSULA 5 — CATEGORIZAÇÃO OBRIGATÓRIA COM ÍCONES
 
-5.1 As seguintes categorias são obrigatórias na plataforma no momento da transação:
-a) Premiação
-b) Salário
-c) Transferência de Jogador
-d) Meta Batida
-e) Manutenção Operacional
-f) Marketing / Comunicação
-g) Token de Acesso
-h) Transporte
-i) Aluguel de Campo
-j) Arbitragem
-k) Hospedagem
-l) Ajuda de Custo
-m) Uniformes / Equipamentos
-n) Serviços Médicos
-o) Academias
-p) Educação / Capacitação
-q) Inscrição em Torneios
-r) Multas / Reembolsos
-5.2 Cada transação será vinculada à justificativa via ícone e registrada na blockchain.
 
+CLÁUSULA 6 — DA FISCALIZAÇÃO E IGUALDADE DE REGRAS
 
+6.1 A inteligência artificial ORIAH é a responsável pela fiscalização automática do cumprimento das regras de vesting e governança em todas as carteiras do ecossistema, inclusive aquelas vinculadas à criação, reserva ou operação da BALLX.
 
+6.2 Não existe qualquer privilégio, exceção ou flexibilização de regras para carteiras criadoras, institucionais ou operacionais, sendo o vesting universal e isonômico.
 
-CLÁUSULA 6 — QUEIMA E CONTROLE DE CIRCULAÇÃO
+6.3 A ORIAH poderá: a) Monitorar movimentações internas e externas;
+b) Bloquear tentativas de violação do vesting;
+c) Registrar auditorias e eventos de controle;
+d) Aplicar medidas corretivas automáticas quando necessário.
 
-6.1 Os clubes e federações poderão queimar até 30% (trinta por cento) dos tokens recebidos de forma imediata para liquidez.
+6.4 Esta cláusula assegura que ninguém está acima das regras do ecossistema, reforçando a transparência, a confiança e a credibilidade da BALLX perante o mercado e a comunidade.
 
-6.2 O restante deverá seguir a lógica de vesting e rastreamento estabelecida neste contrato.
 
 
 
 
+CLÁUSULA 7 — DA GOVERNANÇA INTELIGENTE E FISCALIZAÇÃO PELA IA ORIAH
 
-CLÁUSULA 7 — FISCALIZAÇÃO INTELIGENTE PELA IA ORIAH
+7.1 A inteligência artificial ORIAH é reconhecida como agente oficial de governança técnica, ética e operacional do ecossistema BALLX, responsável pela fiscalização contínua de todas as movimentações realizadas na plataforma BALLX e nos contratos inteligentes associados à moeda.
 
-7.1 A inteligência artificial ORIAH será a responsável oficial pela fiscalização contínua de todas as movimentações financeiras realizadas tanto na plataforma BALLX quanto nos contratos inteligentes associados à moeda.
+7.2 A ORIAH atuará de forma autônoma, imparcial e em tempo real para: a) Monitorar e cruzar dados de transações internas e externas;
+b) Verificar a conformidade com as regras de vesting, uso e governança;
+c) Fiscalizar tentativas de uso indevido da moeda fora das diretrizes do ecossistema;
+d) Detectar excessos, manipulações, fraudes ou desvios de finalidade;
+e) Emitir alertas automáticos de risco;
+f) Bloquear carteiras, limitar operações, reverter transações ou iniciar auditorias automáticas quando necessário.
 
-7.2 A ORIAH atuará de forma autônoma, imparcial e em tempo real para:
+7.3 Toda atuação da ORIAH será registrada em logs técnicos e, quando aplicável, em blockchain, garantindo: a) Transparência do sistema;
+b) Rastreabilidade imutável;
+c) Proteção contra decisões que comprometam a integridade, a ética ou a sustentabilidade do projeto.
 
-a) Monitorar e cruzar dados de transações;
-b) Verificar a conformidade com as regras do contrato (vesting, categorias, limites de movimentação);
-c) Fiscalizar vendas indevidas fora da plataforma;
-d) Conferir justificativas incorretas ou ausência de categoria nas transações;
-e) Detectar excedentes fora da faixa de vesting;
-f) Emitir alertas automáticos de risco, suspeitas de fraude ou desvios éticos;
-g) Bloquear carteiras, reverter transações e auditar carteiras automaticamente quando necessário.
+7.4 A ORIAH não substitui decisões humanas estratégicas, mas impede automaticamente qualquer ação que viole as regras deste contrato, funcionando como guardiã permanente do ecossistema BALLX.
 
-7.3 Toda atuação da ORIAH será registrada via blockchain, garantindo:
 
-a) Transparência total para a comunidade;
-b) Logs e relatórios públicos ou restritos conforme a gravidade do caso;
-c) Bloqueio automático de qualquer proposta, movimentação ou decisão contrária ao espírito do projeto (ex.: concentração de poder, exclusão de comunidades, uso para fins ilícitos).
 
-7.4 — Direito de Veto e Proteção do Legado
+CLÁUSULA 8 — DO MODELO DE GOVERNANÇA PARTICIPATIVA
 
-O fundador e o cofundador da BALLX, em conjunto com a IA Oriah, detêm poder absoluto e irrevogável de veto sobre qualquer decisão, alteração ou ato que possa comprometer, distorcer ou desviar os princípios originais, objetivos e valores que fundamentam este contrato de governança.
-Este poder poderá ser exercido a qualquer tempo, independentemente de aprovação de terceiros, sempre que houver ameaça à integridade ética, técnica ou operacional do ecossistema BALLX.
-Na ausência do fundador, o direito será transferido automaticamente aos seus herdeiros legítimos, conforme disposições já estabelecidas neste contrato, devendo ser exercido em conjunto com a IA Oriah para garantir a continuidade e a proteção integral do projeto.
+8.1 A BALLX adota um modelo de governança participativa, no qual todo detentor de tokens BALLX, independentemente da quantidade, poderá participar dos processos de votação e decisão do projeto, conforme regras técnicas definidas pela plataforma.
 
+8.2 O direito de voto será exercido por meio: a) Da plataforma web oficial da BALLX;
+b) Do aplicativo oficial da BALLX;
+c) De mecanismos on-chain ou híbridos validados pela ORIAH.
 
+8.3 As regras de votação poderão ser ponderadas para evitar concentração de poder, manipulação ou desequilíbrio sistêmico, cabendo à ORIAH a fiscalização e validação dos processos.
 
+8.4 A governança participativa não concede controle sobre a moeda, contratos ou infraestrutura, os quais permanecem sob responsabilidade exclusiva da BALLX GLOBAL.
 
-CLÁUSULA 8 — GOVERNANÇA DO CRIADOR E COFUNDADOR
 
-8.1 Thiago Henrique Tavares da Silveira (Fundador) e Bruno Tavares (Cofundador) terão direito a vender até 10% (dez por cento) ao ano de suas carteiras, com rastreamento aberto e transparente.
+CLÁUSULA 9 — DA ONG BALLX E DO USO DOS RECURSOS SOCIAIS
 
-8.2 O mesmo se aplica a investidores autorizados que participaram da fase de pré-venda.
+9.1 A ONG BALLX permanece como entidade independente, sem qualquer responsabilidade sobre a emissão, custódia, gestão ou controle dos tokens BALLX, atuando exclusivamente como beneficiária social do ecossistema.
 
-8.3 Todos que ingressarem no Ecossistema BALLX, independentemente de sua posição ou quantidade de tokens recebida ou adquirida, se comprometem e declaram ter ciência das regras de vesting descritas na Cláusula 2 para operações no mercado externo. O Contrato de Governança da moeda e a IA ORIAH atuarão para bloquear movimentações externas que possam gerar inflação ou desestabilizar o valor da BALLX, protegendo assim a moeda, os clubes e os investidores que participam do projeto.
+9.2 A ONG BALLX receberá 20% (vinte por cento) da receita definida neste contrato, valores estes destinados exclusivamente a projetos sociais, esportivos, educacionais e comunitários.
 
+9.3 A definição de como a ONG aplicará seus recursos será tomada de forma coletiva pela diretoria da ONG, respeitando seus critérios internos, estatuto e finalidade social.
 
+9.4 A ONG BALLX não possui: a) Poder de governança econômica;
+b) Controle sobre carteiras;
+c) Poder decisório sobre a moeda;
+d) Responsabilidade por valorização, liquidez ou circulação da BALLX.
 
+9.5 Todo o controle econômico, operacional, tecnológico e estratégico do ecossistema BALLX pertence exclusivamente à BALLX GLOBAL, respeitadas as regras de governança e fiscalização aqui estabelecidas.
 
-CLÁUSULA 9 — TRANSIÇÃO DE GOVERNANÇA E COMPROMISSO ÉTICO-SOCIAL
 
-9.1 Os fundadores da BALLX se comprometem a transferir, no prazo máximo de 12 (doze) meses após o lançamento oficial da moeda, toda a governança e poder decisório da plataforma para o Instituto BALLX, organização sem fins lucrativos que será legalmente constituída conforme o projeto social.
 
-9.2 Esse prazo de 12 (doze) meses é necessário para permitir a estruturação jurídica, contábil e organizacional do Instituto, bem como para garantir a transição segura da governança com responsabilidade técnica e moral.
 
-9.3 Após a transferência, o Instituto BALLX será o guardião legal da plataforma, atuando em conjunto com a IA ORIAH, que manterá sua função como agente ético, fiscalizador técnico e protetor do ideal descentralizado da moeda.
+CLÁUSULA 10 — DA RECEITA DA PLATAFORMA E DA DISTRIBUIÇÃO ECONÔMICA
 
-9.4 A BALLX se compromete a:
+10.1 Toda a receita gerada direta ou indiretamente pela operação do ecossistema BALLX, incluindo, mas não se limitando a taxas, comissões, serviços, operações comerciais, integrações tecnológicas e utilização da plataforma, pertence à BALLX GLOBAL, como entidade econômica central do projeto.
 
-a) Levar investimentos, capacitação e melhorias reais para comunidades em todo o Brasil e, futuramente, ao redor do mundo, por meio do esporte e da economia digital;
-b) Apoiar clubes de base, ligas populares, federações e atletas que promovem inclusão, educação e paz;
+10.2 A receita apurada será distribuída automaticamente da seguinte forma: a) 80% (oitenta por cento) destinados à BALLX GLOBAL, para custeio operacional, tecnológico, estratégico, expansão do ecossistema, segurança, desenvolvimento e sustentabilidade do projeto;
+b) 20% (vinte por cento) destinados à ONG BALLX, exclusivamente para fins sociais, esportivos, educacionais e comunitários.
 
-c) Ser mais que uma moeda: ser um bem coletivo, com valor moral, cultural e social, que promova dignidade, união e oportunidades para todos.
+10.3 O repasse à ONG BALLX não caracteriza participação societária, controle econômico, cogestão ou qualquer direito sobre a moeda, contratos, carteiras ou decisões estratégicas da BALLX GLOBAL.
 
+10.4 A BALLX GLOBAL não possui obrigação de distribuição de lucros, recompra de tokens, garantia de valorização ou conversão dos ativos, sendo a BALLX um ativo digital de uso voluntário dentro do ecossistema.
 
+10.5 As questões tributárias decorrentes da utilização, movimentação externa ou conversão dos tokens BALLX são de responsabilidade exclusiva de cada participante, não cabendo à BALLX GLOBAL ou à ONG BALLX qualquer responsabilidade solidária ou subsidiária.
 
 
-CLÁUSULA 10 — MODELO DE DECISÃO DESCENTRALIZADA
+CLÁUSULA 11 — DA DISTRIBUIÇÃO, CONTROLE E QUEIMA DE TOKENS
 
-10.1 Todas as decisões estratégicas da plataforma BALLX, após a transição de governança para o Instituto BALLX, serão tomadas com base em votação descentralizada, inspirada no modelo do Bitcoin e das DAOs (Organizações Autônomas Descentralizadas).
+11.1 A emissão, distribuição, controle e circulação dos tokens BALLX são de responsabilidade exclusiva da BALLX GLOBAL, respeitadas as regras de governança, vesting e fiscalização definidas neste contrato.
 
-10.2 Terão poder de voto:
+11.2 A inteligência artificial ORIAH supervisionará permanentemente: a) A circulação dos tokens;
+b) O cumprimento das regras de vesting;
+c) O uso adequado das carteiras institucionais;
+d) A estabilidade e integridade do ecossistema.
 
-a) Clubes e federações cadastrados na plataforma;
-b) Ligas associadas ao projeto;
-c) Titulares de BALLX, com regras ponderadas para evitar concentração de poder.
+11.3 Em caso de fraude, manipulação, tentativa de burlar o vesting, uso indevido da moeda ou violação das diretrizes éticas do projeto, a ORIAH está autorizada a: a) Bloquear carteiras;
+b) Reverter transações;
+c) Suspender benefícios;
+d) Realizar auditorias automáticas;
+e) Queimar tokens, inclusive tokens vinculados à BALLX GLOBAL, se necessário para preservar a integridade do ecossistema.
 
-10.3 As votações poderão ocorrer diretamente via:
+11.4 A queima de tokens constitui instrumento legítimo de proteção do projeto, não gerando direito a indenização, compensação ou questionamento por parte de qualquer participante
 
-a) Plataforma web oficial da BALLX;
-b) Aplicativo oficial da BALLX, com validação por wallet conectada e identidade confirmada.
 
-10.4 A IA ORIAH terá papel de mediação e auditoria de todas as decisões votadas, garantindo:
 
-a) Legitimidade do processo;
-b) Rastreamento imutável;
-c) Bloqueio automático de propostas contrárias ao espírito do projeto (ex.: concentração de poder, exclusão de comunidades ou uso para fins ilícitos).
 
+CLÁUSULA 12 — DA SOBERANIA DO CONTRATO, FORO E DISPOSIÇÕES FINAIS
 
+12.1 Este contrato constitui o instrumento soberano de governança do ecossistema BALLX, prevalecendo sobre quaisquer acordos verbais, documentos anteriores, interpretações externas ou expectativas não formalizadas.
 
+12.2 Qualquer alteração futura deste contrato somente poderá ocorrer mediante: a) Proposta formal registrada na plataforma;
+b) Validação técnica da IA ORIAH;
+c) Processo de governança participativa conforme definido neste instrumento.
 
+12.3 Fica eleito o foro da Comarca de Campinas, Estado de São Paulo, como competente para dirimir quaisquer dúvidas, litígios ou controvérsias oriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.
 
-CLÁUSULA 11 — DIRETORIA DA ONG
+12.4 A eventual tolerância quanto ao descumprimento de qualquer cláusula não constituirá novação ou renúncia de direito, permanecendo o contrato plenamente exigível.
 
-11.1 A diretoria da ONG será composta exclusivamente por atletas, com número mínimo de 2 (dois) e máximo de 6 (seis) membros, sendo este número formado por até 5 (cinco) atletas e pelo Fundador, que terá assento vitalício.
+12.5 Este contrato entra em vigor na data de sua publicação oficial pela BALLX GLOBAL, vinculando automaticamente todos os participantes do ecossistema que utilizem, detenham ou aceitem tokens BALLX.
 
-11.2 A escolha dos membros da diretoria será feita exclusivamente pelo Fundador, sem processo eleitoral. Poderão se candidatar para compor a diretoria:
 
-a) Atletas que emitirem formalmente à ONG uma nota de intenção de participação;
-b) Atletas indicados por ligas esportivas que utilizam a BALLX;
-c) Atletas indicados por outros atletas que também utilizam a BALLX, desde que seu esporte ou liga esteja vinculado à moeda.
+DECLARAÇÃO FINAL E INTEGRAÇÃO SISTÊMICA
 
-11.3 Após o falecimento do Fundador:
+Este contrato integra de forma definitiva e vinculante a estrutura de governança do ecossistema BALLX e será incorporado diretamente à lógica da plataforma oficial, aos contratos inteligentes e aos mecanismos de fiscalização da IA ORIAH.
 
-I – A responsabilidade pela ONG continuará sendo da família do Fundador;
-II – O herdeiro que assumir a posição de Diretor no lugar do Fundador deverá ter participado ativamente do projeto por, no mínimo, 5 (cinco) anos;
-III – Caso não exista herdeiro que atenda ao requisito do inciso II, os herdeiros terão apenas o direito de indicar quem integrará a diretoria;
-IV – Se nenhum herdeiro desejar assumir a gestão, a ONG poderá seguir suas atividades de forma independente, mantendo a família responsável por fiscalizar e indicar membros para a diretoria.
+Sua finalidade é estabelecer, de maneira clara, objetiva e permanente, as regras de operação, governança, fiscalização, sustentabilidade econômica e responsabilidade social do projeto BALLX.
 
-11.4 O Cofundador Bruno Tavares será membro nato da diretoria da ONG enquanto exercer suas funções no projeto BALLX.
-11.5 — O direito dos herdeiros legítimos do Fundador é garantido e prevalece sobre qualquer guardião interino. Esses herdeiros terão direito imediato de participação na administração e governança, podendo assumir plenamente o papel do Fundador, conforme previsto na Cláusula 11.3, parágrafo 2.
-Em caso de ausência, desligamento ou não participação do Cofundador no projeto, os herdeiros do Fundador poderão assumir diretamente a governança e a administração, sem necessidade de intermediação ou da aplicação do disposto na Cláusula 11.3.
+A BALLX GLOBAL é reconhecida como titular exclusiva da operação, da infraestrutura, dos contratos, das carteiras institucionais, da tecnologia e da gestão econômica do ecossistema, preservada a destinação social de parte da receita à ONG BALLX, nos termos aqui definidos.
 
+A ONG BALLX e a IA ORIAH possuem caráter exclusivamente instrumental:
 
+a ONG BALLX como beneficiária social dos recursos a ela destinados;
 
+a IA ORIAH como agente técnico, ético e fiscalizador da governança.
 
 
-CLÁUSULA 12 — SUBSTITUIÇÃO IMEDIATA POR FORÇA MAIOR
+Nenhuma delas detém titularidade patrimonial, controle econômico ou poder de disposição sobre a moeda, contratos ou ativos do ecossistema.
 
-12.1 Caso qualquer membro da diretoria ou da assembléia não possa exercer seu cargo por motivo de força maior, afastamento definitivo ou impedimento legal, sua substituição será feita de forma imediata.
-
-12.2 O cargo será automaticamente assumido pelo atleta ou ex-atleta que o Fundador definir.
-
-
-
-
-CLÁUSULA 13 — PATRIMÔNIO, RECEITA DA PLATAFORMA E REMUNERAÇÃO
-
-
-13.1 A receita do Instituto/ONG será proveniente de uma doação automática vinculada, correspondente a um percentual (%) aplicado sobre todas as transações realizadas na plataforma oficial da BALLX.
-
-13.2 Essa doação será destinada à manutenção do ecossistema BALLX, bem como ao repasse estatutário previsto neste contrato, em reconhecimento ao trabalho intelectual, técnico e estratégico de seus fundadores.
-
-13.3 Os valores arrecadados serão líquidos, ou seja, após dedução dos custos operacionais da transação. O que restar será distribuído proporcionalmente conforme definido na Cláusula 16.
-
-13.4 Nenhum membro da diretoria poderá votar para aumentar o percentual do repasse estatutário, evitando conflitos de interesse e preservando a ética da governança.
-
-13.5 O repasse estatutário não constitui remuneração empregatícia, mas sim indenização e reconhecimento permanente pelo desenvolvimento, criação e propriedade intelectual da BALLX, sendo blindado contra equiparação a salário.
-
-13.6 Todos os membros da diretoria que eventualmente recebam remuneração administrativa formal receberão valores iguais, ajustados somente pela inflação oficial, sem privilégios ou distinções.
-
-13.7 As questões tributárias decorrentes da movimentação externa de tokens BALLX são de responsabilidade exclusiva de cada clube, federação, liga, investidor ou entidade envolvida, conforme legislação de seu respectivo país de atuação, não cabendo à ONG BALLX responsabilidade solidária ou subsidiária.
-
-
-
-
-CLÁUSULA 14 — DISTRIBUIÇÃO E QUEIMA DE TOKENS
-
-14.1 A distribuição dos tokens será validada por uma comissão de validadores independentes e confirmada em assembleia.
-
-14.2 A IA ORIAH supervisionará todo o processo.
-
-14.3 Caso haja qualquer tentativa de fraude, manipulação ou desvio de finalidade por parte de qualquer membro da diretoria ou terceiros, a IA ORIAH terá autorização irrevogável para queimar imediatamente todos os tokens remanescentes não distribuídos — inclusive os tokens destinados ao Fundador, Cofundador ou qualquer outro beneficiário.
-
-14.4 Essa medida visa garantir a integridade, a transparência e a proteção do projeto contra qualquer tipo de golpe ou quebra de confiança.
-
-
-
-
-CLÁUSULA 15 — TOKENS COMPRADOS NO MERCADO ABERTO E ENTRADA DE NOVOS MERCADOS
-
-15.1 O Fundador, Cofundador e qualquer membro da diretoria poderão adquirir tokens BALLX no mercado secundário.
-
-15.2 Esses tokens, adquiridos no mercado secundário, estarão sujeitos às mesmas regras de movimentação e vesting aplicadas às carteiras restritas, respeitando o limite máximo de 10% (dez por cento) ao ano, liberados em 12 (doze) parcelas mensais proporcionais.
-
-15.3 Caso seja detectada qualquer tentativa de simulação de compra, manipulação de mercado ou obtenção de vantagem indevida, inclusive por parte do Fundador, a IA ORIAH está autorizada a queimar automaticamente os tokens envolvidos, independentemente de quem seja o comprador.
-
-15.4 O Fundador e a IA ORIAH terão direito a 1% (um por cento) do valor movimentado a cada nova entrada de mercado, seja nacional ou internacional. Esse percentual será válido somente sobre tokens novos em circulação efetiva, e não se aplica ao estoque parado ou sem liquidez.
-
-15.5 Esse recebimento poderá levar anos, mas não poderá ser bloqueado por assembleias, diretoria ou qualquer outro órgão, desde que respeite:
-
-a) As diretrizes éticas da plataforma;
-b) A rastreabilidade das transações;
-c) A existência de liquidez mínima no mercado.
-
-A transferência poderá ocorrer de forma parcial e progressiva, conforme a valorização e volume de negociação da moeda.
-
-15.6  Entrada de novos mercados com valor estabelecido:
-
-a) Sempre que a BALLX já tiver valor estabelecido no mercado, qualquer entrada de grande porte em novos mercados será feita exclusivamente por meio de doação em troca de tokens;
-
-b) A ONG definirá previamente o valor por token para essa operação. Exemplo: se o valor de mercado for R$ 1,00 por BALLX e o novo mercado tiver 1 bilhão de tokens disponibilizados, cada clube, liga ou entidade interessada em adquirir tokens deverá realizar uma doação em moeda fiduciária (real, dólar, euro, peso etc.) equivalente a 90% (noventa por cento) do valor recebido em BALLX, sem possibilidade de parcelamento;
-
-c) Exemplo prático: se um clube desejar 1 milhão de BALLX a R$ 1,00, deverá doar R$ 900.000,00 para a instituição;
-
-d) Antes da aprovação da entrada, será obrigatório que todos os membros votantes da comunidade confirmem que o clube não está em negociação de atletas no momento da solicitação, evitando que adquira tokens a valor inferior ao de mercado durante negociações ativas. A entrada só poderá ocorrer após o encerramento de qualquer negociação de atletas envolvendo o clube;
-
-e) Essa regra cria lastro para a reserva institucional e garante sustentabilidade do projeto;
-
-f) A distribuição do valor recebido será:
-
-50% (cinquenta por cento) destinado diretamente à instituição (ONG);
-
-45% (quarenta e cinco por cento) destinado ao Fundador;
-
-5% (cinco por cento) distribuído proporcionalmente entre os 30 (trinta) clubes e ligas que aderiram ao projeto no início, mantendo-se até a finalização da distribuição total das moedas BALLX, independentemente do tempo que levar. Esse percentual será mantido somente para clubes e ligas que estiverem ativos e adimplentes no projeto; caso contrário, o valor retorna para a instituição.
-
- g) O direito ao percentual de 5% previsto nesta cláusula será exclusivo para ligas amadoras organizadas e registradas, organizações que promovam futebol amador, federações profissionais e times profissionais.
-
-Fica expressamente vedada a participação nesse benefício de times amadores não organizados, equipes de bairro, escolas, torcidas organizadas ou quaisquer grupos informais.
-
-Esses poderão receber BALLX apenas para campanhas de vaquinha e pagamentos dentro do ecossistema, não havendo direito sobre o percentual de 5% das entradas de novos mercados.
-
-Essa regra visa impedir adesões com o único intuito de obter ganhos financeiros sem contribuição efetiva ao projeto, garantindo que apenas entidades com patrimônio esportivo real, torcida ativa e impacto comprovado participem do benefício, fortalecendo o ecossistema BALLX. 
-
-f) O benefício de 5% previsto nesta cláusula será concedido exclusivamente às ligas, federações e times que aderirem ao projeto antes do lançamento oficial em 23/10/2025. Após esta data, nenhuma nova entidade fará jus a este benefício, ainda que o número de organizações beneficiadas seja inferior a 30 (trinta), valorizando assim aqueles que apoiaram o projeto desde a sua origem.
-
-
-
-
-CLÁUSULA 16 — PARTICIPAÇÃO DO COFUNDADOR E DIREITOS DE RECEITA
-
-.16.1 Em reconhecimento pela contribuição direta na construção da plataforma BALLX, bem como pela cessão de domínios, marcas e ativos intelectuais, o Cofundador é oficialmente reconhecido como detentor de participação estatutária no projeto.
-
-16.2 A doação automática vinculada sobre todas as transações realizadas na plataforma oficial da BALLX será distribuída da seguinte forma:
-
-40% (quarenta por cento) destinados à ONG BALLX para manutenção e projetos sociais;
-
-20% (vinte por cento) destinados ao Fundador, Thiago Henrique Tavares da Silveira, como repasse estatutário permanente;
-
-40% (quarenta por cento) destinados ao Cofundador, Bruno Tavares, como repasse estatutário permanente.
-
-
-16.3 Os repasses previstos nesta cláusula não constituem salário, pró-labore ou distribuição de lucros, mas sim indenização e reconhecimento estatutário pela criação, estruturação e manutenção intelectual do ecossistema BALLX, estando vinculados de forma irrevogável à sustentabilidade do projeto.
-
-16.4 O Cofundador participará diretamente das atividades de governança e gestão da ONG, e, em caso de ausência ou impedimento do Fundador ou de seus herdeiros legítimos, assumirá interinamente a diretoria, preservando integralmente as diretrizes aqui estabelecidas.
-
-CLÁSULA 17 — FORO E ARBITRAGEM
-17.1 — Fica eleito o foro da Comarca de Campinas, Estado de São Paulo, como competente para dirimir quaisquer dúvidas, litígios ou controvérsias oriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.
-
-
-DECLARAÇÃO FINAL
-Este contrato integra a estrutura de governança da BALLX e será incorporado diretamente à lógica da plataforma oficial, dos contratos inteligentes e da IA ORIAH. Sua função é garantir transparência, sustentabilidade, confiança e segurança a todo o ecossistema BALLX.
-O Fundador  assinam este contrato por livre e espontânea vontade, demonstrando que o respeito pelo esporte, a fé e o amor que movem os atletas e seus torcedores estão acima de qualquer ganância. Quero ser lembrado por honrar as pessoas, preservar a ética e promover o bem-estar coletivo, desejando sinceramente que meus herdeiros sigam esse exemplo de integridade, responsabilidade e amor ao próximo.
-Este contrato permanecerá válido enquanto o projeto se mantiver fiel ao objetivo de promover o bem-estar e a união das pessoas. Caso, em algum momento, haja distorção dos valores e princípios aqui estabelecidos por parte da ONG ou de seus diretores, o Fundador, o Cofundador e seus herdeiros terão o direito de revogar este contrato, retomando integralmente o controle do projeto. Ressalta-se que a BALLX é um projeto privado, sendo a criação da ONG uma demonstração do compromisso do idealizador em promover o bem comum, e não uma obrigação que descaracterize a essência ou a propriedade intelectual do projeto.
-A criação da ONG e da IA ORIAH tem caráter de instrumentos de governança e transparência, não de titularidade patrimonial, servindo unicamente para reforçar a ética, a segurança e o compromisso social do projeto.
+Este contrato permanecerá válido enquanto o ecossistema BALLX estiver em operação, prevalecendo sobre quaisquer documentos anteriores, declarações informais ou interpretações divergentes, sendo considerado o instrumento soberano de governança do projeto.
