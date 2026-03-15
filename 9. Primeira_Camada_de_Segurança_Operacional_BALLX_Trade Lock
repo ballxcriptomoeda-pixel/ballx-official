@@ -1,0 +1,973 @@
+
+---
+
+Visão Geral
+
+O BALLX Trade Lock é o plugin responsável pela primeira camada de segurança operacional do ecossistema BALLX.
+
+Ele atua na camada Web2, antes da execução final do evento econômico na blockchain.
+
+Sua função é impedir que um pedido:
+
+seja concluído manualmente de forma indevida
+
+gere duplicidade de evento econômico
+
+avance para a execução final sem passar pelas validações mínimas do sistema
+
+
+Em termos simples, esse plugin funciona como um cadeado lógico entre o pedido e a execução econômica.
+
+
+---
+
+Estrutura do plugin
+
+O plugin é dividido em um arquivo principal e cinco módulos internos:
+
+ballx-trade-lock/
+├── ballx-trade-lock.php
+└── core/
+    ├── class-ballx-trade-lock-engine.php
+    ├── class-ballx-trade-lock-payment.php
+    ├── class-ballx-trade-lock-delivery.php
+    ├── class-ballx-trade-lock-hash.php
+    └── class-ballx-trade-lock-ui.php
+
+Essa separação foi feita para facilitar:
+
+leitura
+
+auditoria
+
+manutenção
+
+evolução futura
+
+
+Cada arquivo tem uma função específica.
+
+
+---
+
+9.1 Arquivo principal do plugin
+
+Arquivo:
+
+ballx-trade-lock.php
+
+Código base
+
+<?php
+/**
+ * Plugin Name: BALLX Trade Lock
+ * Description: Camada de segurança que impede execução duplicada de trades e valida pedidos antes de gerar evento econômico.
+ * Version: 1.0.1
+ * Author: ORIAH (BALLX)
+ */
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+define('BALLX_TRADE_LOCK_PATH', plugin_dir_path(__FILE__));
+
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-engine.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-payment.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-delivery.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-hash.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-ui.php';
+
+add_action('plugins_loaded', function() {
+
+    \BALLX_Trade_Lock\Engine::init();
+    \BALLX_Trade_Lock\UI::init();
+
+});
+
+
+---
+
+Explicação linha por linha
+
+Cabeçalho do plugin
+
+/**
+ * Plugin Name: BALLX Trade Lock
+ * Description: Camada de segurança que impede execução duplicada de trades e valida pedidos antes de gerar evento econômico.
+ * Version: 1.0.1
+ * Author: ORIAH (BALLX)
+ */
+
+Esse bloco serve para o WordPress reconhecer que esse arquivo é um plugin.
+
+Ele informa:
+
+nome
+
+descrição
+
+versão
+
+autor
+
+
+
+---
+
+Proteção contra acesso direto
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+Esse comando impede que alguém tente abrir o arquivo diretamente pelo navegador.
+
+Em linguagem simples:
+
+> “se esse arquivo não estiver sendo carregado dentro do WordPress, pare tudo.”
+
+
+
+Isso evita execução fora do contexto da plataforma.
+
+
+---
+
+Definição do caminho base
+
+define('BALLX_TRADE_LOCK_PATH', plugin_dir_path(__FILE__));
+
+Esse comando cria uma constante com o caminho da pasta do plugin.
+
+Isso é usado para que o sistema saiba onde estão os outros arquivos internos.
+
+
+---
+
+Carregamento dos módulos
+
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-engine.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-payment.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-delivery.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-hash.php';
+require_once BALLX_TRADE_LOCK_PATH . 'core/class-ballx-trade-lock-ui.php';
+
+O comando require_once significa:
+
+> “carregue este arquivo uma única vez.”
+
+
+
+Isso serve para trazer para dentro do sistema as classes que fazem o trabalho real do plugin.
+
+Cada linha carrega uma parte da lógica:
+
+Engine → motor principal
+
+Payment → valida pagamento
+
+Delivery → valida entrega
+
+Hash → impede repetição
+
+UI → controla interface e comportamento visual
+
+
+
+---
+
+Inicialização do plugin
+
+add_action('plugins_loaded', function() {
+
+    \BALLX_Trade_Lock\Engine::init();
+    \BALLX_Trade_Lock\UI::init();
+
+});
+
+Esse comando diz ao WordPress:
+
+> “quando todos os plugins forem carregados, inicie o BALLX Trade Lock.”
+
+
+
+Aqui o sistema ativa duas partes principais:
+
+Engine::init() → inicia a lógica de validação
+
+UI::init() → inicia os controles de interface e status
+
+
+
+---
+
+9.2 Camada de pagamento
+
+Arquivo:
+
+class-ballx-trade-lock-payment.php
+
+Código
+
+<?php
+
+namespace BALLX_Trade_Lock;
+
+class Payment {
+
+    public static function confirmed($order_id) {
+
+        $status = get_post_meta($order_id, '_ballx_payment_confirmed', true);
+
+        if ($status === 'yes') {
+            return true;
+        }
+
+        return false;
+    }
+
+}
+
+
+---
+
+O que esse arquivo faz
+
+Esse módulo verifica se o pagamento da ordem foi confirmado.
+
+
+---
+
+Explicação
+
+Namespace
+
+namespace BALLX_Trade_Lock;
+
+Serve para organizar o código e evitar conflito com outros plugins.
+
+
+---
+
+Classe Payment
+
+class Payment {
+
+Essa classe representa a camada de validação financeira do plugin.
+
+
+---
+
+Função confirmed
+
+public static function confirmed($order_id) {
+
+Essa função recebe o ID do pedido e responde:
+
+> “o pagamento desse pedido foi confirmado?”
+
+
+
+
+---
+
+Leitura do meta do pedido
+
+$status = get_post_meta($order_id, '_ballx_payment_confirmed', true);
+
+Esse comando lê um valor salvo dentro do pedido.
+
+O nome do meta é:
+
+_ballx_payment_confirmed
+
+Esse meta funciona como uma marca interna de confirmação.
+
+
+---
+
+Regra de validação
+
+if ($status === 'yes') {
+    return true;
+}
+
+Se o meta estiver marcado como yes, a camada de pagamento é considerada válida.
+
+
+---
+
+Retorno padrão
+
+return false;
+
+Se não estiver confirmado, o sistema entende que o pedido ainda não pode prosseguir.
+
+
+---
+
+Em linguagem simples
+
+Esse módulo responde:
+
+> “o dinheiro realmente entrou?”
+
+
+
+Se a resposta for não, o pedido fica bloqueado.
+
+
+---
+
+9.3 Camada de entrega
+
+Arquivo:
+
+class-ballx-trade-lock-delivery.php
+
+Código
+
+<?php
+
+namespace BALLX_Trade_Lock;
+
+class Delivery {
+
+    public static function confirmed($order_id) {
+
+        $delivery = get_post_meta($order_id, '_ballx_delivery_confirmed', true);
+
+        if ($delivery === 'yes') {
+            return true;
+        }
+
+        return false;
+    }
+
+}
+
+
+---
+
+O que esse arquivo faz
+
+Esse módulo valida se a entrega foi confirmada.
+
+Ele é usado principalmente para produtos físicos.
+
+
+---
+
+Explicação
+
+Leitura do meta de entrega
+
+$delivery = get_post_meta($order_id, '_ballx_delivery_confirmed', true);
+
+Esse comando lê o meta:
+
+_ballx_delivery_confirmed
+
+Esse valor indica se o sistema reconheceu que a entrega foi concluída.
+
+
+---
+
+Regra
+
+if ($delivery === 'yes') {
+    return true;
+}
+
+Se o meta estiver marcado como yes, a camada de entrega passa na validação.
+
+
+---
+
+Em linguagem simples
+
+Esse módulo responde:
+
+> “o produto físico realmente foi entregue?”
+
+
+
+Se a resposta for não, o pedido físico ainda não pode avançar.
+
+
+---
+
+9.4 Camada de hash / repetição
+
+Arquivo:
+
+class-ballx-trade-lock-hash.php
+
+Código
+
+<?php
+
+namespace BALLX_Trade_Lock;
+
+class Hash {
+
+    public static function exists($order_id) {
+
+        $hash = get_post_meta($order_id, '_ballx_trade_hash', true);
+
+        if (!empty($hash)) {
+            return true;
+        }
+
+        return false;
+    }
+
+}
+
+
+---
+
+O que esse arquivo faz
+
+Esse módulo protege o sistema contra repetição de evento econômico.
+
+
+---
+
+Explicação
+
+Leitura do hash
+
+$hash = get_post_meta($order_id, '_ballx_trade_hash', true);
+
+Esse comando lê o meta:
+
+_ballx_trade_hash
+
+Esse valor representa que o evento econômico daquela ordem já foi executado e já possui um registro.
+
+
+---
+
+Regra principal
+
+if (!empty($hash)) {
+    return true;
+}
+
+Se existir hash, significa:
+
+> essa ordem já foi utilizada antes no fluxo econômico.
+
+
+
+
+---
+
+Em linguagem simples
+
+Esse módulo responde:
+
+> “esse pedido já gerou evento econômico?”
+
+
+
+Se a resposta for sim, o sistema bloqueia nova tentativa.
+
+
+---
+
+Regra central da BALLX
+
+No BALLX Trade Lock:
+
+hash não libera.
+hash trava.
+
+Ou seja:
+
+sem hash → o pedido ainda pode ser validado
+
+com hash → o pedido já foi consumido economicamente
+
+
+
+---
+
+9.5 Motor principal do plugin
+
+Arquivo:
+
+class-ballx-trade-lock-engine.php
+
+Código
+
+<?php
+
+namespace BALLX_Trade_Lock;
+
+class Engine {
+
+    public static function init() {
+
+        add_filter('woocommerce_order_is_paid', [__CLASS__, 'validate_order'], 10, 2);
+
+    }
+
+    public static function validate_order($paid, $order) {
+
+        $order_id = $order->get_id();
+
+        if ( Hash::exists($order_id) ) {
+
+            return false;
+        }
+
+        if ( !Payment::confirmed($order_id) ) {
+
+            return false;
+        }
+
+        if ( self::is_physical_product($order) ) {
+
+            if ( !Delivery::confirmed($order_id) ) {
+
+                return false;
+            }
+
+        }
+
+        return $paid;
+    }
+
+    private static function is_physical_product($order) {
+
+        foreach ($order->get_items() as $item) {
+
+            $product = $item->get_product();
+
+            if (!$product->is_virtual()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+}
+
+
+---
+
+O que esse arquivo faz
+
+Esse é o motor principal de validação do plugin.
+
+Ele junta as outras camadas e decide se a ordem pode ou não prosseguir.
+
+
+---
+
+Explicação
+
+Inicialização
+
+add_filter('woocommerce_order_is_paid', [__CLASS__, 'validate_order'], 10, 2);
+
+Esse comando conecta o plugin ao WooCommerce.
+
+Ele diz:
+
+> “quando o sistema for verificar o estado do pedido, passe antes pela função validate_order.”
+
+
+
+
+---
+
+Função validate_order
+
+public static function validate_order($paid, $order) {
+
+Essa função recebe:
+
+o estado atual do pedido
+
+o objeto completo da ordem
+
+
+E começa a aplicar as regras.
+
+
+---
+
+Verificação de hash
+
+if ( Hash::exists($order_id) ) {
+    return false;
+}
+
+Se já existir hash, o pedido é bloqueado.
+
+Motivo:
+
+> a ordem já foi consumida anteriormente.
+
+
+
+
+---
+
+Verificação de pagamento
+
+if ( !Payment::confirmed($order_id) ) {
+    return false;
+}
+
+Se o pagamento não foi confirmado, o pedido também é bloqueado.
+
+
+---
+
+Verificação de produto físico
+
+if ( self::is_physical_product($order) ) {
+
+Essa linha pergunta:
+
+> existe produto físico nessa ordem?
+
+
+
+Se existir, o sistema exige uma camada a mais: entrega confirmada.
+
+
+---
+
+Verificação de entrega
+
+if ( !Delivery::confirmed($order_id) ) {
+    return false;
+}
+
+Se a entrega não foi confirmada, o pedido físico não pode prosseguir.
+
+
+---
+
+Retorno final
+
+return $paid;
+
+Se todas as validações passarem, o sistema permite seguir com o fluxo.
+
+
+---
+
+Função de identificação do tipo de produto
+
+private static function is_physical_product($order) {
+
+Essa função percorre os itens da ordem.
+
+Se encontrar um produto que não seja virtual:
+
+if (!$product->is_virtual()) {
+    return true;
+}
+
+então o sistema entende que é uma ordem física.
+
+
+---
+
+Em linguagem simples
+
+Esse arquivo responde:
+
+> “esse pedido está apto a avançar?”
+
+
+
+Ele só responde sim quando:
+
+não existe hash anterior
+
+o pagamento foi confirmado
+
+e, se for físico, a entrega foi confirmada
+
+
+
+---
+
+9.6 Camada de interface e bloqueio visual
+
+Arquivo:
+
+class-ballx-trade-lock-ui.php
+
+Esse arquivo é a camada de interface do plugin.
+
+Ele atua no painel do pedido e impede o uso manual do status Concluído antes do momento correto.
+
+
+---
+
+Parte 1 — inicialização
+
+public static function init() {
+
+    // Mantém compatibilidade com telas nativas Woo
+    add_filter('woocommerce_order_actions', [__CLASS__, 'filter_order_actions'], 10, 2);
+
+    // Dokan frontend: remove "completed" do select de status
+    add_action('wp_footer', [__CLASS__, 'hide_completed_on_dokan_front']);
+
+    // Auto complete quando cumprir as regras
+    add_action('woocommerce_order_status_changed', [__CLASS__, 'maybe_auto_complete_on_status_change'], 20, 4);
+    add_action('save_post_shop_order', [__CLASS__, 'maybe_auto_complete_on_save'], 20, 3);
+}
+
+O que isso faz
+
+Esse bloco ativa três comportamentos:
+
+1. tenta esconder “Concluído” em telas nativas do WooCommerce
+
+
+2. remove “Concluído” no painel frontend do Dokan
+
+
+3. permite concluir automaticamente quando todas as regras forem atendidas
+
+
+
+
+---
+
+Parte 2 — remoção da ação manual
+
+public static function filter_order_actions($actions, $order) {
+
+    if (!self::can_complete_order($order)) {
+        if (isset($actions['complete'])) {
+            unset($actions['complete']);
+        }
+    }
+
+    return $actions;
+}
+
+O que isso faz
+
+Se a ordem ainda não pode ser concluída, o sistema remove a ação de conclusão do pedido.
+
+Em termos simples:
+
+> “se o pedido não está apto, não mostre a possibilidade de concluir.”
+
+
+
+
+---
+
+Parte 3 — remoção do “Concluído” no Dokan
+
+O bloco abaixo injeta um script no frontend do vendedor:
+
+add_action('wp_footer', [__CLASS__, 'hide_completed_on_dokan_front']);
+
+A função lê o pedido da tela atual e descobre se ele pode ou não concluir.
+
+Se não puder, o script percorre o dropdown de status e remove visualmente a opção Concluído / completed.
+
+Por que isso existe
+
+Porque o vendedor comum muitas vezes tenta usar apenas o que vê na interface.
+
+Então, ao esconder a opção, o sistema já corta a tentativa mais simples de manipulação.
+
+
+---
+
+Parte 4 — conclusão automática
+
+add_action('woocommerce_order_status_changed', [__CLASS__, 'maybe_auto_complete_on_status_change'], 20, 4);
+add_action('save_post_shop_order', [__CLASS__, 'maybe_auto_complete_on_save'], 20, 3);
+
+Esses comandos fazem o plugin observar mudanças na ordem.
+
+Quando o pedido já está apto, ele pode mudar automaticamente para completed.
+
+Isso é importante porque o sistema BALLX depende da conclusão do pedido como ponto de passagem para a próxima etapa.
+
+
+---
+
+Parte 5 — tentativa de auto conclusão
+
+private static function maybe_complete_order($order) {
+
+Essa função faz várias verificações:
+
+1. Já está concluído?
+
+if ($order->has_status('completed')) {
+    return;
+}
+
+Se já estiver concluído, não faz nada.
+
+2. Já existe hash?
+
+$hash = get_post_meta($order_id, '_ballx_trade_hash', true);
+if (!empty($hash)) {
+    return;
+}
+
+Se já existe hash, o pedido já foi consumido e não deve concluir de novo.
+
+3. Pode completar?
+
+if (!self::can_complete_order($order)) {
+    return;
+}
+
+Se ainda não cumpriu as regras, também não conclui.
+
+4. Só conclui em estados intermediários
+
+$allowed_current_statuses = ['pending', 'on-hold', 'processing'];
+
+Ou seja, ele só auto conclui se estiver em um estado intermediário coerente.
+
+5. Mudança automática para completed
+
+$order->update_status('completed', 'BALLX Trade Lock: pedido concluído automaticamente após validações.');
+
+Quando tudo estiver certo, o plugin muda o pedido para Concluído automaticamente.
+
+
+---
+
+Parte 6 — regra visual de liberação
+
+A função:
+
+private static function can_complete_order($order)
+
+centraliza a regra visual e operacional da conclusão.
+
+Ela lê:
+
+_ballx_payment_confirmed
+
+_ballx_delivery_confirmed
+
+_ballx_trade_hash
+
+
+E aplica a seguinte lógica:
+
+Se já existe hash:
+
+bloqueia
+
+Se pagamento não está confirmado:
+
+bloqueia
+
+Se a ordem tiver produto físico e a entrega não estiver confirmada:
+
+bloqueia
+
+Se tudo estiver correto:
+
+libera
+
+
+---
+
+Como o plugin protege a primeira camada
+
+O BALLX Trade Lock protege a primeira camada do ecossistema de três formas:
+
+1. Bloqueio visual
+
+O vendedor não vê facilmente a opção de conclusão manual.
+
+2. Bloqueio lógico
+
+Mesmo que tente avançar, a ordem precisa passar nas validações internas.
+
+3. Bloqueio contra repetição
+
+Se já existir hash, a ordem é travada.
+
+
+---
+
+Resultado prático
+
+Esse plugin impede principalmente:
+
+conclusão antecipada
+
+tentativa simples de inflar evento
+
+reutilização do mesmo pedido
+
+avanço manual sem pagamento
+
+avanço manual sem entrega, quando necessário
+
+
+
+---
+
+Importância dentro da arquitetura BALLX
+
+Esse plugin é apenas a primeira camada.
+
+Ele trabalha antes do:
+
+backend
+
+contrato de autoridade
+
+mercado V3
+
+registro on-chain
+
+
+Ou seja, ele protege a porta de entrada da arquitetura.
+
+
+---
+
+Acesso ao plugin
+
+Esse plugin é de acesso restrito e ligado diretamente à integridade econômica do sistema BALLX.
+
+Por esse motivo, sua manutenção, alteração e evolução permanecem sob controle do fundador do ecossistema.
+
+
+---
+
+Conclusão
+
+O BALLX Trade Lock representa a primeira camada de validação operacional da BALLX.
+
+Sua função é impedir que o fluxo econômico avance apenas por interface, garantindo que o pedido só atravesse da operação Web2 para a etapa econômica quando as condições mínimas forem atendidas.
+
+Em termos simples:
+
+> na BALLX, um pedido não se torna evento econômico porque alguém clicou.
+Ele só se torna evento quando o sistema valida que ele existe de forma legítima.
+
+
+
+
+---
