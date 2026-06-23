@@ -77,8 +77,12 @@ CLÁUSULA 5 — DO VESTING APLICÁVEL A TODO O ECOSSISTEMA
 5.5 O vesting tem como objetivo: 
 
 a) Proteger o valor da BALLX;
+
 b) Evitar concentração e despejo de tokens;
+
 c) Garantir crescimento orgânico e sustentável do ecossistema.
+
+5.6 Imutabilidade e Publicidade do Contrato: Para garantir a auditabilidade em tempo real e a segurança descentralizada de todo o ecossistema, o contrato inteligente de gerenciamento dinâmico de vesting (BallxAutoManagerV2_Final) foi implantado de forma imutável e com código-fonte 100% verificado e público na rede Polygon, sob o endereço oficial: 0x8318d1703c8cc7ea15e6e33cc39ab60a6f6e3715. Qualquer alteração em suas regras estruturais após o deploy é tecnicamente impossível.
 
 
 
