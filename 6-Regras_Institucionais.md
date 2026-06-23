@@ -66,17 +66,17 @@ c) Decidir se utilizará a BALLX para premiações, entradas de eventos, ingress
 
 CLÁUSULA 5 — DO VESTING APLICÁVEL A TODO O ECOSSISTEMA
 
-5.1 As regras de vesting inteligente constituem princípio fundamental da governança BALLX e aplicam-se a todo o ecossistema, sem exceção, incluindo: a) Clubes;
-b) Ligas;
-c) Vendedores e lojistas;
-d) Parceiros institucionais;
-e) A própria carteira criadora e as carteiras sob controle da BALLX.
+5.1 Princípio de Governança: As regras de vesting inteligente constituem princípio fundamental da governança BALLX e aplicam-se a todas as movimentações destinadas ao mercado externo (piscinas de liquidez, DEX/CEX), sem exceção.
 
-5.2 O vesting limita as movimentações destinadas ao mercado externo ao ecossistema BALLX ao percentual máximo de 10% (dez por cento) ao ano, liberados de forma proporcional em 12 (doze) parcelas mensais.
+5.2 Piso Mínimo Garantido (Uso Livre): Todo usuário possui o direito irrevogável de movimentar até 10.000 BALLX por ciclo de 30 dias de forma totalmente livre, independente do tamanho do seu saldo.
 
-5.3 O uso interno dos tokens dentro do ecossistema BALLX não sofre qualquer limitação, podendo ocorrer de forma imediata e integral.
+5.3 Gotejamento por Acumulação (Holders): Para contas com saldo a partir de 120.000 BALLX, aplica-se a liberação controlada de 10% ao ano, distribuída proporcionalmente em 12 parcelas mensais (~0,833% ao mês). O limite mensal final desses usuários será de 10.000 BALLX + o gotejamento do saldo.
 
-5.4 O vesting tem como objetivo: a) Proteger o valor da BALLX;
+5.4 Recálculo de Excedente Dinâmico: O sistema monitora o topo histórico de saldo de cada carteira em tempo real através da rede Polygon. Caso o usuário aumente seu saldo de forma legítima, o contrato recalcula o limite sobre o valor excedente e libera a nova cota cumulativa imediatamente, reiniciando o ciclo de 30 dias.
+
+5.5 O vesting tem como objetivo: 
+
+a) Proteger o valor da BALLX;
 b) Evitar concentração e despejo de tokens;
 c) Garantir crescimento orgânico e sustentável do ecossistema.
 
