@@ -1,7 +1,7 @@
 
 Ecossistema BALLX – Inovação, Ética e Paixão pelo Esporte
 
-CLÁUSULA 1 — DAS CARTEIRAS E DOS BENEFÍCIOS INSTITUCIONAIS BALLX
+ SEÇÃO1 — DAS CARTEIRAS E DOS BENEFÍCIOS INSTITUCIONAIS BALLX
 
 1.1 A BALLX disponibiliza aos vendedores e lojistas cadastrados na BALLX Store uma carteira institucional vinculada à infraestrutura tecnológica do ecossistema, destinada à operacionalização de benefícios concedidos aos consumidores nas vendas de produtos e serviços participantes.
 
@@ -22,7 +22,7 @@ CLÁUSULA 1 — DAS CARTEIRAS E DOS BENEFÍCIOS INSTITUCIONAIS BALLX
 1.9 — Observação: Todas as regras, condições, limites, critérios de utilização e demais disposições aplicáveis às carteiras institucionais, aos benefícios e à participação dos vendedores e lojistas encontram-se estabelecidos nos Termos e Condições da plataforma BALLX Store, que integram as regras de participação no ecossistema e devem ser observados pelos respectivos participantes.
 
 
-CLÁUSULA 2 — DA EXTINÇÃO DO MODELO DE DOAÇÃO DIRETA
+SEÇÃO 2 — DA EXTINÇÃO DO MODELO DE DOAÇÃO DIRETA
 
 2.1 Fica expressamente previsto que não existe, a partir da vigência deste contrato, qualquer modalidade de doação direta de tokens BALLX a clubes, ligas, federações, fornecedores, parceiros ou quaisquer terceiros.
 
@@ -37,7 +37,7 @@ Caso o vendedor receba tokens BALLX em sua loja física, ele pode vincular sua p
 
 A regra primária da BALLX Store é a mesma para qualquer uma das duas carteiras: é preciso ter saldo de tokens disponível para realizar uma venda. Se não houver saldo suficiente, a venda não é processada. Sempre que uma venda ocorrer e o BALLX correspondente não for transferido para a carteira do cliente, o sistema verifica automaticamente o saldo disponível — seja na carteira que a BALLX disponibiliza inicialmente, seja na carteira própria vinculada pelo vendedor — e, caso esteja insuficiente, bloqueia novas vendas daquela conta até que o saldo seja reposto.
 
-CLÁUSULA 3 — DA ESTRUTURA OPERACIONAL E DO PAPEL DA BALLX GLOBAL
+ SEÇÃO 3 — DA ESTRUTURA OPERACIONAL E DO PAPEL DA BALLX GLOBAL
 
 3.1 A BALLX GLOBAL é reconhecida como entidade responsável central do ecossistema BALLX, responsável pela operação, tecnologia, contratos, plataformas, parcerias comerciais, carteiras institucionais e crescimento sustentável do projeto.
 
@@ -47,7 +47,7 @@ CLÁUSULA 3 — DA ESTRUTURA OPERACIONAL E DO PAPEL DA BALLX GLOBAL
 
 3.4 A BALLX GLOBAL detém autoridade plena para definir políticas operacionais e tecnológicas, sempre respeitando os princípios éticos, a rastreabilidade e a supervisão contínua exercida pela IA ORIAH.
 
-CLÁUSULA 4 — DA FINALIDADE DAS CARTEIRAS E DA ACEITAÇÃO VOLUNTÁRIA DA BALLX
+SEÇÃO 4 — DA FINALIDADE DAS CARTEIRAS E DA ACEITAÇÃO VOLUNTÁRIA DA BALLX
 
 4.1 As carteiras institucionais BALLX disponibilizadas a clubes, ligas, vendedores e lojistas têm como finalidade principal a utilização da BALLX como instrumento de cashback, vinculada exclusivamente à venda de produtos, serviços, ingressos ou experiências oferecidas por seus próprios titulares.
 
@@ -57,7 +57,7 @@ CLÁUSULA 4 — DA FINALIDADE DAS CARTEIRAS E DA ACEITAÇÃO VOLUNTÁRIA DA BALL
 
 4.4 Sempre que a BALLX for aceita, os tokens recebidos poderão ser usados livremente dentro do ecossistema BALLX, respeitadas as regras de governança e as demais cláusulas deste contrato.
 
-CLÁUSULA 5 — DO VESTING APLICÁVEL A TODO O ECOSSISTEMA
+SEÇÃO 5 — DO VESTING APLICÁVEL A TODO O ECOSSISTEMA
 
 5.1 Princípio de Governança: As regras de vesting inteligente constituem princípio fundamental de governança do programa BALLX, funcionando como trava de liberação para que o benefício chegue de forma equilibrada a todos os participantes, sem concentração.
 
@@ -83,7 +83,7 @@ c) Garantir o crescimento orgânico e sustentável do ecossistema.
 
 5.6 Imutabilidade e Publicidade do Contrato: Para garantir a auditabilidade em tempo real e a segurança descentralizada de todo o ecossistema, o contrato inteligente de gerenciamento dinâmico de aquisição (BallxAutoManagerV2_Final) foi implantado de forma imutável e com código-fonte 100% verificado e público na rede Polygon, sob o endereço oficial: 0x8318d1703c8cc7ea15e6e33cc39ab60a6f6e3715. Qualquer alteração em suas regras estruturais após a implantação é tecnicamente impossível.
 
-CLÁUSULA 6 — DA FISCALIZAÇÃO E IGUALDADE DE REGRAS
+SEÇÃO 6 — DA FISCALIZAÇÃO E IGUALDADE DE REGRAS
 
 6.1 A inteligência artificial ORIAH é a responsável pela fiscalização automática do cumprimento das regras de aquisição e governança em todas as carteiras do ecossistema, inclusive aquelas vinculadas à criação, reserva ou operação da BALLX.
 
@@ -93,7 +93,7 @@ CLÁUSULA 6 — DA FISCALIZAÇÃO E IGUALDADE DE REGRAS
 
 6.4 Esta cláusula garante que ninguém esteja acima das regras do ecossistema, reforçando a transparência, a confiança e a credibilidade da BALLX perante o programa e a comunidade.
 
-CLÁUSULA 7 — DA GOVERNANÇA INTELIGENTE E FISCALIZAÇÃO PELA IA ORIAH
+SEÇÃO 7 — DA GOVERNANÇA INTELIGENTE E FISCALIZAÇÃO PELA IA ORIAH
 
 7.1 A inteligência artificial ORIAH é reconhecida como agente oficial de governança técnica, ética e operacional do ecossistema BALLX, responsável pela fiscalização contínua de todas as movimentações realizadas na plataforma BALLX e nos contratos inteligentes associados ao token.
 
@@ -103,7 +103,7 @@ CLÁUSULA 7 — DA GOVERNANÇA INTELIGENTE E FISCALIZAÇÃO PELA IA ORIAH
 
 7.4 A ORIAH não substitui decisões estratégicas humanas, mas impede automaticamente qualquer ação que viole as regras deste contrato, funcionando como guarda permanente do ecossistema BALLX.
 
-CLÁUSULA 8 — DO MODELO DE GOVERNANÇA PARTICIPATIVA
+SEÇÃO 8 — DO MODELO DE GOVERNANÇA PARTICIPATIVA
 
 8.1 A BALLX adota um modelo de governança participativa, no qual todos os detentores de tokens BALLX, independentemente da quantidade, poderão participar dos processos de votação e decisão do projeto, conforme regras técnicas definidas pela plataforma.
 
@@ -113,7 +113,7 @@ CLÁUSULA 8 — DO MODELO DE GOVERNANÇA PARTICIPATIVA
 
 8.4 A governança participativa não concede controle sobre o token, contratos ou infraestrutura, os quais permanecem sob responsabilidade exclusiva da BALLX GLOBAL.
 
-CLÁUSULA 9 — DA ONG BALLX E DO USO DOS RECURSOS SOCIAIS
+SEÇÃO 9 — DA ONG BALLX E DO USO DOS RECURSOS SOCIAIS
 
 9.1 A ONG BALLX permanece como entidade independente, sem qualquer responsabilidade sobre a emissão, custódia, gestão ou controle dos tokens BALLX, atuando exclusivamente como beneficiária social do ecossistema.
 
@@ -125,7 +125,7 @@ CLÁUSULA 9 — DA ONG BALLX E DO USO DOS RECURSOS SOCIAIS
 
 9.5 Todo o controle operacional, tecnológico e estratégico do ecossistema BALLX pertence exclusivamente à BALLX GLOBAL, respeitadas as regras de governança e fiscalização aqui estabelecidas.
 
-CLÁUSULA 10 — DA RECEITA DA PLATAFORMA E DA DISTRIBUIÇÃO
+SEÇÃO 10 — DA RECEITA DA PLATAFORMA E DA DISTRIBUIÇÃO
 
 10.1 Toda a receita gerada direta ou indiretamente pela operação do ecossistema BALLX, incluindo, mas não se limitando a taxas, comissões, serviços, operações comerciais, integrações tecnológicas e utilização da plataforma, pertence à BALLX GLOBAL, como entidade responsável central do projeto.
 
@@ -137,7 +137,7 @@ CLÁUSULA 10 — DA RECEITA DA PLATAFORMA E DA DISTRIBUIÇÃO
 
 10.5 As questões tributárias decorrentes da utilização ou transferência de tokens BALLX são de responsabilidade exclusiva de cada participante, não cabendo à BALLX GLOBAL ou à ONG BALLX qualquer responsabilidade solidária.
 
-CLÁUSULA 11 — DA DISTRIBUIÇÃO, CONTROLE E QUEIMA DE TOKENS
+SEÇÃO 11 — DA DISTRIBUIÇÃO, CONTROLE E QUEIMA DE TOKENS
 
 11.1 A emissão, distribuição, controle e circulação dos tokens BALLX são de responsabilidade exclusiva da BALLX GLOBAL, respeitadas as regras de governança, aquisição e fiscalização definidas neste contrato.
 
@@ -147,7 +147,7 @@ CLÁUSULA 11 — DA DISTRIBUIÇÃO, CONTROLE E QUEIMA DE TOKENS
 
 11.4 A queima de tokens constitui instrumento legítimo de proteção do programa, não gerando direito a indenização ou questionamento por parte de qualquer participante.
 
-CLÁUSULA 12 — DA SOBERANIA DO CONTRATO, FORO E DISPOSIÇÕES FINAIS
+SEÇÃO 12 — DA SOBERANIA DO CONTRATO, FORO E DISPOSIÇÕES FINAIS
 
 12.1 Este contrato constitui o instrumento soberano de governança do ecossistema BALLX, prevalecendo sobre quaisquer acordos verbais, documentos anteriores, interpretações externas ou expectativas não formalizadas.
 
