@@ -1,17 +1,17 @@
-BALLX — Ecossistema Financeiro Esportivo Web5
+BALLX — Ecossistema de Cashback Esportivo Web5
 
 Visão Geral
 
-A BALLX é um ecossistema financeiro esportivo brasileiro, projetado para integrar blockchain, governança on-chain e sistemas operacionais reais, indo além do conceito tradicional de “apenas uma criptomoeda”.
+A BALLX é um ecossistema de cashback e benefícios esportivos brasileiro, projetado para integrar blockchain, governança on-chain e sistemas operacionais reais, indo além do conceito tradicional de "apenas um programa de pontos".
 
-Este repositório reúne os materiais públicos oficiais do projeto, permitindo que usuários, desenvolvedores, parceiros e instituições compreendam o que é a BALLX, como ela funciona e quais princípios técnicos e econômicos orientam o sistema.
+Este repositório reúne os materiais públicos oficiais do projeto, permitindo que usuários, desenvolvedores, parceiros e instituições compreendam o que é a BALLX, como ela funciona e quais princípios técnicos e operacionais orientam o sistema.
 
 
 ---
 
 O que é a BALLX
 
-A BALLX foi criada para operar como uma infraestrutura financeira utilitária, conectando:
+A BALLX foi criada para operar como uma infraestrutura de benefícios e cashback, conectando:
 
 clubes e ligas esportivas
 
@@ -19,7 +19,7 @@ atletas e profissionais do esporte
 
 patrocinadores e apoiadores
 
-mercado financeiro e tecnologia blockchain
+torcedores e tecnologia blockchain
 
 
 O foco da BALLX é uso real, com rastreabilidade, governança e regras claras, evitando modelos puramente especulativos sem lastro operacional.
@@ -35,7 +35,7 @@ Web2 → sistemas tradicionais, painéis, marketplaces e integrações reais
 
 Web3 → contratos inteligentes, blockchain, eventos on-chain e rastreabilidade
 
-Web5 → identidade do sistema, regras aplicadas em contrato e lógica financeira que não depende de confiança cega em intermediários
+Web5 → identidade do sistema, regras aplicadas em contrato e lógica de benefícios que não depende de confiança cega em intermediários
 
 
 Na prática:
@@ -76,7 +76,7 @@ Fiscalização e registros on-chain
 
 🔹 Camada Operacional
 
-Registro de negociações
+Registro de conversões do programa
 
 Integração com sistemas reais
 
@@ -104,7 +104,7 @@ análises de coerência e conformidade
 
 referências a contratos públicos já implantados
 
-componentes operacionais públicos, incluindo plugins e engines de leitura de mercado
+componentes operacionais públicos, incluindo plugins e engines de leitura do programa
 
 evidências de funcionamento real do ecossistema
 
@@ -114,9 +114,9 @@ evidências de funcionamento real do ecossistema
 
 Sobre código e contratos não públicos
 
-Algumas camadas do sistema BALLX, como contratos de governança avançados e reservas operacionais, não são publicadas neste repositório.
+Algumas camadas do sistema BALLX, como contratos de governança avançados e reservas do programa, não são publicadas neste repositório.
 
-Isso ocorre por razões estratégicas de proteção da lógica econômica e financeira — prática comum em sistemas financeiros que operam em produção.
+Isso ocorre por razões estratégicas de proteção da lógica de funcionamento do programa — prática comum em sistemas que operam em produção.
 
 A existência, o papel e a integração dessas camadas são documentados conceitualmente e podem ser avaliados em processos formais de auditoria, sem exposição pública irrestrita.
 
@@ -141,11 +141,11 @@ O projeto já registra transações, pedidos e integrações reais, demonstrando
 
 ---
 
-Plugin de Mercado BALLX — Engine Público de Dados e Gráficos
+Plugin de Referência BALLX — Engine Público de Dados e Gráficos
 
-Este diretório contém o plugin público completo de mercado da BALLX, incluindo:
+Este diretório contém o plugin público completo de referência da BALLX, incluindo:
 
-endpoint de dados de mercado
+endpoint de dados de referência
 
 estrutura oficial de feed em JSON
 
@@ -154,26 +154,26 @@ motor gráfico de visualização
 arquivos auxiliares de integração
 
 
-O plugin é responsável por disponibilizar dados públicos de preço, volume e histórico de negociações, de forma auditável, transparente e sem custódia.
+O plugin é responsável por disponibilizar dados públicos de valor de conversão, volume e histórico de registros, de forma auditável, transparente e sem custódia.
 
 O sistema foi projetado para atender padrões utilizados por:
 
-exchanges centralizadas (CEX)
+painéis e agregadores de referência
 
-agregadores de mercado (CoinGecko, CoinMarketCap, etc.)
+agregadores de dados (no estilo CoinGecko, CoinMarketCap, etc.)
 
 ferramentas de análise e gráficos
 
 
 🔍 Visão Geral do Plugin
 
-O plugin da BALLX segue um modelo híbrido entre blockchain e mercado financeiro tradicional:
+O plugin da BALLX segue um modelo híbrido entre blockchain e painéis de referência tradicionais:
 
-❌ não existe trade manual ou edição de dados
+❌ não existe registro manual ou edição de dados
 
 ❌ não há custódia de moedas ou dinheiro
 
-❌ não é possível gerar negociações falsas
+❌ não é possível gerar registros falsos
 
 ✅ todos os dados são derivados de eventos on-chain
 
@@ -187,28 +187,28 @@ A Autoridade BALLX valida, consolida e registra os dados que alimentam o plugin 
 
 a blockchain Polygon permite leitura pública dos eventos
 
-a escrita de dados de mercado é restrita à Autoridade BALLX
+a escrita de dados de referência é restrita à Autoridade BALLX
 
-nenhuma carteira externa pode forjar ou simular trades
+nenhuma carteira externa pode forjar ou simular registros
 
 o plugin reflete exclusivamente operações reais do ecossistema
 
 
-Esse modelo impede wash trading, spoofing e manipulação artificial de volume.
+Esse modelo impede duplicação, falsificação e manipulação artificial de volume.
 
 📊 Estrutura de Dados
 
 O plugin consome e expõe dados em formato JSON, incluindo:
 
-par de negociação (ex: BALLX/BRL)
+par de conversão (ex: BALLX/BRL)
 
-preço atual e preço bruto
+valor atual e valor bruto de referência
 
 histórico temporal (candles)
 
-volume real transacionado
+volume real de conversões
 
-identificação da última ordem válida
+identificação do último pedido válido
 
 
 Campos principais:
@@ -224,7 +224,7 @@ candles[]
 last_order
 
 
-O formato é compatível com padrões utilizados por agregadores de mercado.
+O formato é compatível com padrões utilizados por agregadores de referência.
 
 📦 Distribuição
 
@@ -234,7 +234,7 @@ Para facilitar a instalação e reutilização, os arquivos operacionais podem s
 
 ---
 
-Considerações Financeiras
+Considerações do Programa
 
 A BALLX foi concebida para ser:
 
@@ -245,10 +245,9 @@ funcional antes de ser expansiva
 governada antes de ser escalada
 
 
-Este repositório é o ponto público de entrada para compreender o ecossistema BALLX e sua aplicação prática de uma Web5 voltada ao esporte e às finanças reais.
+Este repositório é o ponto público de entrada para compreender o ecossistema BALLX e sua aplicação prática de uma Web5 voltada ao esporte e ao cashback real.
 
 
 ---
 
-BALLX — Onde blockchain encontra mercado real.
-
+BALLX — Onde blockchain encontra o esporte real.
