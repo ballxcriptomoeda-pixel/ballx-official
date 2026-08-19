@@ -36,8 +36,7 @@ públicos na rede Polygon:
 
 ### 🔹 Contrato V3 (Operação e Registro)
 
-Contrato responsável pela operação e registro de negociações,
-eventos e integrações com o sistema BALLX em funcionamento real.
+Contrato responsável pela operação e registro de vendas de produtos na Ballx store,
 
 https://polygonscan.com/address/0xa0d5de9cea5bfd3ae15408bbb69ad54764d66140
 
