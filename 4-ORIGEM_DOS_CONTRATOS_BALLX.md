@@ -34,7 +34,7 @@ do ecossistema, permitindo rastrear de forma clara a relação entre os contrato
 A partir do endereço de origem acima, foram implantados os seguintes contratos
 públicos na rede Polygon:
 
-### 🔹 Exchange V3 (Operação e Registro)
+### 🔹 Contrato V3 (Operação e Registro)
 
 Contrato responsável pela operação e registro de negociações,
 eventos e integrações com o sistema BALLX em funcionamento real.
