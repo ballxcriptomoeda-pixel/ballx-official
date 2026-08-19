@@ -1,14 +1,26 @@
+
 Ecossistema BALLX – Inovação, Ética e Paixão pelo Esporte
 
-CLÁUSULA 1 — DAS CARTEIRAS INSTITUCIONAIS BALLX
+CLÁUSULA 1 — DAS CARTEIRAS E DOS BENEFÍCIOS INSTITUCIONAIS BALLX
 
-1.1 A BALLX opera exclusivamente por meio de carteiras institucionais digitais, disponibilizadas pela própria plataforma BALLX a clubes, ligas, federações, vendedores, lojistas e parceiros comerciais devidamente cadastrados.
+1.1 A BALLX disponibiliza aos vendedores e lojistas cadastrados na BALLX Store uma carteira institucional vinculada à infraestrutura tecnológica do ecossistema, destinada à operacionalização de benefícios concedidos aos consumidores nas vendas de produtos e serviços participantes.
 
-1.2 As carteiras institucionais BALLX não configuram doação, mas sim instrumentos operacionais de crédito, premiação, cashback, comissão ou incentivo, vinculados diretamente às atividades realizadas dentro do ecossistema BALLX.
+1.2 No momento da adesão como vendedor ou lojista, poderá ser disponibilizado ao participante um saldo ou limite operacional de BALLX destinado exclusivamente à concessão de benefícios, cashback, descontos, campanhas promocionais ou outras vantagens vinculadas às vendas realizadas dentro do ecossistema, observados os limites definidos pela BALLX para cada participante.
 
-1.3 Todas as carteiras institucionais serão especificadas como carteiras restritas, operando prioritariamente dentro da plataforma oficial BALLX, com rastreabilidade integral, categorização obrigatória das transações e fiscalização automática pela IA ORIAH.
+1.3 O limite disponibilizado ao vendedor ou lojista possui finalidade exclusivamente operacional e promocional, permitindo que o participante utilize BALLX para oferecer benefícios aos seus próprios consumidores, não constituindo depósito, investimento ou garantia de retorno financeiro.
 
-1.4 A BALLX permanece como detentora da infraestrutura, da lógica de operação e das regras de uso dessas carteiras, podendo aplicar limites, bloqueios, auditorias ou ajustes sempre que necessários para preservar a integridade do ecossistema.
+1.4 O lojista poderá, caso deseje, vincular sua própria carteira Web3 ao ecossistema BALLX para receber e movimentar BALLX diretamente, utilizando os tokens recebidos como instrumento de benefício, desconto ou incentivo aos consumidores.
+
+1.5 A utilização da BALLX pelo lojista poderá ocorrer tanto em vendas realizadas presencialmente quanto em operações realizadas por meios digitais ou pela BALLX Store, conforme as funcionalidades disponibilizadas pela plataforma.
+
+1.6 A adesão do lojista ao programa de benefícios é voluntária, cabendo a cada participante definir quais produtos, serviços, campanhas ou condições comerciais poderão utilizar BALLX como benefício ou desconto ao consumidor.
+
+1.7 A disponibilização de limite operacional pela BALLX não implica obrigação de aceitação da BALLX pelo lojista, nem caracteriza promessa de valorização, remuneração ou retorno financeiro, tendo como finalidade a utilização do ativo como benefício vinculado à atividade comercial realizada pelo participante.
+
+1.8 As regras, limites e condições aplicáveis às carteiras institucionais poderão ser definidos de acordo com o perfil, atividade e participação de cada vendedor ou lojista no ecossistema, permanecendo registrados nos sistemas da BALLX para fins de rastreabilidade e controle operacional.
+
+1.9 — Observação: Todas as regras, condições, limites, critérios de utilização e demais disposições aplicáveis às carteiras institucionais, aos benefícios e à participação dos vendedores e lojistas encontram-se estabelecidos nos Termos e Condições da plataforma BALLX Store, que integram as regras de participação no ecossistema e devem ser observados pelos respectivos participantes.
+
 
 CLÁUSULA 2 — DA EXTINÇÃO DO MODELO DE DOAÇÃO DIRETA
 
