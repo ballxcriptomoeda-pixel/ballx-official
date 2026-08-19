@@ -15,7 +15,7 @@ Ecossistema BALLX – Inovação, Ética e Paixão pelo Esporte
 
 1.6 A adesão do lojista ao programa de benefícios é voluntária, cabendo a cada participante definir quais produtos, serviços, campanhas ou condições comerciais poderão utilizar BALLX como benefício ou desconto ao consumidor.
 
-1.7 A disponibilização de limite operacional pela BALLX não implica obrigação de aceitação da BALLX pelo lojista, nem caracteriza promessa de valorização, remuneração ou retorno financeiro, tendo como finalidade a utilização do ativo como benefício vinculado à atividade comercial realizada pelo participante.
+1.7 A disponibilização de limite operacional pela BALLX não implica obrigação de aceitação da BALLX pelo lojista, nem caracteriza promessa de valorização, remuneração ou retorno financeiro, tendo como finalidade a utilização do token como benefício vinculado à atividade comercial realizada pelo participante.
 
 1.8 As regras, limites e condições aplicáveis às carteiras institucionais poderão ser definidos de acordo com o perfil, atividade e participação de cada vendedor ou lojista no ecossistema, permanecendo registrados nos sistemas da BALLX para fins de rastreabilidade e controle operacional.
 
