@@ -32,6 +32,11 @@ CLÁUSULA 2 — DA EXTINÇÃO DO MODELO DE DOAÇÃO DIRETA
 
 2.4 A inexistência de doação direta visa garantir: a) Sustentabilidade do programa; b) Segurança jurídica; c) Conformidade regulatória; d) Prevenção a interpretações fiscais indevidas; e) Sustentabilidade do programa de benefícios BALLX.
 
+2.5 Da Distribuição da Reserva aos Vendedores: Todo token BALLX sai do estoque central e é disponibilizado em uma carteira que a BALLX cria dentro da conta de cada vendedor (time, lojista ou empresa parceira). A partir dela, o vendedor distribui os tokens aos seus clientes de acordo com as regras da plataforma, seja em cada venda avulsa, seja em assinaturas recorrentes.
+Caso o vendedor receba tokens BALLX em sua loja física, ele pode vincular sua própria carteira (de sua custódia pessoal) à sua loja virtual na BALLX Store, para também distribuir tokens a partir dela.
+
+A regra primária da BALLX Store é a mesma para qualquer uma das duas carteiras: é preciso ter saldo de tokens disponível para realizar uma venda. Se não houver saldo suficiente, a venda não é processada. Sempre que uma venda ocorrer e o BALLX correspondente não for transferido para a carteira do cliente, o sistema verifica automaticamente o saldo disponível — seja na carteira que a BALLX disponibiliza inicialmente, seja na carteira própria vinculada pelo vendedor — e, caso esteja insuficiente, bloqueia novas vendas daquela conta até que o saldo seja reposto.
+
 CLÁUSULA 3 — DA ESTRUTURA OPERACIONAL E DO PAPEL DA BALLX GLOBAL
 
 3.1 A BALLX GLOBAL é reconhecida como entidade responsável central do ecossistema BALLX, responsável pela operação, tecnologia, contratos, plataformas, parcerias comerciais, carteiras institucionais e crescimento sustentável do projeto.
