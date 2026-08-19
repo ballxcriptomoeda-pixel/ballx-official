@@ -243,8 +243,6 @@ técnica antes de ser promocional
 funcional antes de ser expansiva
 
 governada antes de ser escalada
-
-
 Este repositório é o ponto público de entrada para compreender o ecossistema BALLX e sua aplicação prática de uma Web5 voltada ao esporte e ao cashback real.
 
 
