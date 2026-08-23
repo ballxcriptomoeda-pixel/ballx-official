@@ -38,7 +38,7 @@ públicos na rede Polygon:
 
 Contrato responsável pela operação e registro de vendas de produtos na Ballx store,
 
-https://polygonscan.com/address/0xa0d5de9cea5bfd3ae15408bbb69ad54764d66140
+
 
 ---
 
@@ -47,7 +47,7 @@ https://polygonscan.com/address/0xa0d5de9cea5bfd3ae15408bbb69ad54764d66140
 Contrato responsável por funções operacionais controladas,
 registro de eventos e integração com camadas auxiliares do sistema.
 
-https://polygonscan.com/address/0x4ac4ae04c17ec63079ed3b04f5b8389205e88403
+
 
 ---
 
