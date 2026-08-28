@@ -3,7 +3,7 @@
 
 Visão Geral
 
-O BALLX Trade Lock é o plugin responsável pela primeira camada de segurança operacional do ecossistema BALLX.
+O BALLX Lock é o plugin responsável pela primeira camada de segurança operacional do ecossistema BALLX.
 
 Ele atua na camada Web2, antes da execução final do evento econômico na blockchain.
 
@@ -26,7 +26,7 @@ Estrutura do plugin
 O plugin é dividido em um arquivo principal e cinco módulos internos:
 
 ballx-trade-lock/
-├── ballx-trade-lock.php
+├── ballx-lock.php
 └── core/
     ├── class-ballx-trade-lock-engine.php
     ├── class-ballx-trade-lock-payment.php
@@ -54,13 +54,13 @@ Cada arquivo tem uma função específica.
 
 Arquivo:
 
-ballx-trade-lock.php
+ballx-lock.php
 
 Código base
 
 <?php
 /**
- * Plugin Name: BALLX Trade Lock
+ * Plugin Name: BALLX Lock
  * Description: Camada de segurança que impede execução duplicada de trades e valida pedidos antes de gerar evento econômico.
  * Version: 1.0.1
  * Author: ORIAH (BALLX)
