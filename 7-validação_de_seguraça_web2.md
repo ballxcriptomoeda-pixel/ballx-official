@@ -25,7 +25,7 @@ Dependendo do tipo de produto, existem duas formas de validação inicial:
 
 Produto Digital
 
-BALLX → Compra → Pagamento → Validação via Pagar.me
+BALLX → Compra → Pagamento → Validação via meios de pagamento
 
 Produto Físico
 
