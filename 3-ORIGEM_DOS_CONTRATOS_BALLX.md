@@ -74,8 +74,7 @@ tem como finalidade:
 - separar claramente **origem, governança e operação**
 
 A BALLX adota uma abordagem onde **as regras críticas estão sempre no contrato**,
-e sistemas auxiliares existem apenas para registrar, indexar e apresentar dados,
-sem custódia direta de fundos.
+e sistemas auxiliares existem apenas para registrar, indexar e apresentar dados.
 
 ---
 
