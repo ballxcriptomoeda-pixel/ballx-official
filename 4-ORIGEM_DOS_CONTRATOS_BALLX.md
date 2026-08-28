@@ -18,14 +18,10 @@ estruturação da arquitetura do sistema.
 Este endereço representa o **ponto verificável de autoria e organização**
 do ecossistema, permitindo rastrear de forma clara a relação entre os contratos.
 
-**Endereço de origem (Arquitetura / ORIAH):**
+**Endereço de origem (Arquitetura ):**
 
 0xA6e072702B7092966A4d1BD303E747cA840DA8F7
 
-> Observação importante:  
-> Este endereço **não representa uma carteira operacional de uso cotidiano**
-> e **não deve ser interpretado como concentração de poder financeiro**.
-> Sua função é exclusivamente **estrutural e arquitetural**.
 
 ---
 
@@ -56,26 +52,15 @@ registro de eventos e integração com camadas auxiliares do sistema.
 Contrato responsável pela aplicação das regras institucionais,
 permissões, restrições, vesting e fiscalização on-chain do ecossistema.
 
-https://polygonscan.com/address/0xddb4245b5b9a2ba91248d3cf6512a184b3eb3438
+
 
 ---
 
-### 🔹 Reserva ORIAH (Reserva Operacional)
+### 🔹 Reserva (Reserva Operacional)
 
 Endereço responsável pela **reserva operacional do ecossistema BALLX**,
 utilizado para fins institucionais e operacionais conforme as regras
 de governança do sistema.
-
-Endereço da Reserva ORIAH:
-
-0xf491c5C8A8C88061b9188ADF239F1e919D5f20Dc
-
-> Observação importante:  
-> Este endereço é apresentado **sem link direto** por decisão estratégica,
-> evitando exposição desnecessária a tokens de spam ou interações indevidas.
->  
-> Caso alguém deseje verificar o endereço, basta acessá-lo manualmente
-> utilizando o explorador da rede Polygon.
 
 ---
 
