@@ -83,6 +83,3 @@ e sistemas auxiliares existem apenas para registrar, indexar e apresentar dados.
 Este documento apresenta apenas informações públicas e institucionais.
 Detalhes técnicos sensíveis e lógicas econômicas internas são preservados
 por razões de segurança, sustentabilidade e integridade do ecossistema.
-
-A arquitetura da BALLX foi projetada para funcionar primeiro,
-ser auditável e rastreável, e somente depois ser expandida publicamente.
