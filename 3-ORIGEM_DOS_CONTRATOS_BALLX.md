@@ -59,8 +59,7 @@ permissões, restrições, vesting e fiscalização on-chain do ecossistema.
 ### 🔹 Reserva (Reserva Operacional)
 
 Endereço responsável pela **reserva operacional do ecossistema BALLX**,
-utilizado para fins institucionais e operacionais conforme as regras
-de governança do sistema.
+utilizado para fins institucionais e distribuição de cashback
 
 ---
 
